@@ -1,0 +1,4 @@
+05-04-2026 14:35:40 | Action: Exit Application
+05-04-2026 14:36:56 | Action: SignUp Selected
+04-09-2026 15:14:13 | Action: Login Selected
+04-09-2026 15:14:15 | Action: Exit Application

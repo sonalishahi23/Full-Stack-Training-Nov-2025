@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Sonali Shahi",
+        "email": "sonali@gmail.com",
+        "course": "BCA",
+        "id": "20260219150806"
+    },
+    {
+        "name": "Ashu",
+        "email": "ashu@gmail.com",
+        "course": "BCA",
+        "id": "20260219150856"
+    },
+    {
+        "name": "Nitika",
+        "email": "nitika@gmail.com",
+        "course": "B Tech",
+        "id": "20260219150923"
+    },
+    {
+        "name": "Riya",
+        "email": "riya@gmail.com",
+        "course": "BCA",
+        "id": "20260219151005"
+    }
+]

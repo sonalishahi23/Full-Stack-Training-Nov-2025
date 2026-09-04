@@ -1,0 +1,30 @@
+[
+    {
+        "id": "268939",
+        "name": "Sonali Shahi",
+        "email": "sonali@gmail.com",
+        "password": "Sonali@123",
+        "role": "admin"
+    },
+    {
+        "id": "285339",
+        "name": "Anshika",
+        "email": "anshika101@gmail.com",
+        "password": "Anshika@234",
+        "role": "staff"
+    },
+    {
+        "id": "284233",
+        "name": "Harsh",
+        "email": "harsh001@gmail.com",
+        "password": "Welcome@321",
+        "role": "admin"
+    },
+    {
+        "id": "333848",
+        "name": "Anamika",
+        "email": "anamika@gmail.com",
+        "password": "Anamika@123",
+        "role": "staff"
+    }
+]

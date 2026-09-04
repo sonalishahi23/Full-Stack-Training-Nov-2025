@@ -1,0 +1,7 @@
+04-09-2026 15:07:01 | Action: Menu Management Opened
+04-09-2026 15:09:34 | Action: Order Management Opened
+04-09-2026 15:10:48 | Action: Staff Management Opened
+04-09-2026 15:12:09 | Action: Table Booking Management Opened
+04-09-2026 15:12:16 | Action: Bill Generator Opened
+04-09-2026 15:14:09 | Action: Inventory Management Opened
+04-09-2026 15:14:13 | Action: Admin Logged Out
