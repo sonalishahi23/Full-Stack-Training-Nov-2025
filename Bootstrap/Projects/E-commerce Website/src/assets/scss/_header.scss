@@ -1,0 +1,32 @@
+header {
+
+    .top-header a:hover {
+        color: $primary;
+    }
+
+    .search-box {
+        max-width: $newsletter-width;
+        width: 100%;
+    }
+
+    .form-control::placeholder {
+        color: $gray-500;
+    }
+
+    .header-icons a:hover {
+        transform: translateY(-0.125rem);
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+}
+
+@media (max-width:991.98px) {
+
+    .search-box {
+        width: 100%;
+    }
+
+}

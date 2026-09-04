@@ -1,0 +1,38 @@
+.features-title {
+    font-family: $font-family-base;
+    font-size: $section-title-size;
+    font-weight: $fw-medium;
+    line-height: $line-height-heading;
+    color: $heading-color;
+
+    span {
+        font-family: $font-family-secondary;
+        font-style: italic;
+        color: $primary-color;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .features-title {
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+
+.feature-phone {
+    display: block;
+    max-height: 20rem;
+    margin-bottom: -1.5rem;
+}
+
+.feature-card {
+    background: $section-bg;
+
+    h3 {
+        line-height: 1.3;
+    }
+
+    p {
+        line-height: 1.7;
+    }
+}

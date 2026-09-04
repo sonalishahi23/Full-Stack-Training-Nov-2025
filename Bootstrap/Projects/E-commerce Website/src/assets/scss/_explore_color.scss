@@ -1,0 +1,68 @@
+.explore-colors {
+
+    .color-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: .65rem;
+
+        padding: .6rem 1rem;
+
+        border: 1px solid $gray-500;
+        border-radius: $border-radius-pill;
+
+        color: $primary;
+        text-decoration: none;
+
+        font-size: $font-size-base;
+        font-weight: $font-weight-semibold;
+        letter-spacing: $letter-spacing-sm;
+
+        transition: $transition-base;
+
+        &:hover {
+            background: $primary;
+            color: $white;
+            border-color: $primary;
+        }
+    }
+
+    .color-dot {
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .white-dot {
+        background: $white;
+        border: 1px solid $gray-400;
+    }
+
+    .lime {
+        background: #B7E548;
+    }
+
+    .navy {
+        background: #223C73;
+    }
+
+    .sky {
+        background: #64B5F6;
+    }
+
+    .purple {
+        background: #A855F7;
+    }
+
+    .pink {
+        background: #EC4899;
+    }
+
+    .yellow {
+        background: #FACC15;
+    }
+
+    .green {
+        background: #4F8F66;
+    }
+}

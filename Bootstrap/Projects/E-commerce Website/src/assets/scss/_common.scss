@@ -1,0 +1,33 @@
+body {
+    font-family: $font-family-base;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+a {
+    text-decoration: $link-decoration;
+    transition: $transition-base;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.btn {
+    padding: $btn-padding-y $btn-padding-x;
+    border-radius: $border-radius-pill;
+    transition: $transition-base;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.form-control {
+    height: $input-height;
+
+    &:focus {
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,21 @@
+.trending {
+
+    .product-img {
+        height: 18rem;
+        object-fit: cover;
+    }
+
+    .nav-pills .nav-link {
+        color: $dark;
+        border: 1px solid $gray-300;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: $dark;
+        border-color: $dark;
+        color: $white;
+    }
+
+}
+
+

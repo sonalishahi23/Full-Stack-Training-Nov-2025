@@ -1,0 +1,88 @@
+.hero-title {
+    font-size: $hero-title-size;
+
+    span {
+        font-family: $font-family-secondary;
+        font-style: italic;
+        color: $primary-color;
+    }
+}
+
+.hero-badge {
+    background: $primary-light;
+    width: fit-content;
+
+    i,
+    span {
+        color: $primary-color;
+    }
+}
+
+.hero-image {
+    max-width: 35rem;
+}
+
+.hero-card {
+    top: -1.5rem;
+    right: -1.125rem;
+    width: 17.5rem;
+}
+
+.hero-card-bottom {
+    bottom: -1.5rem;
+    left: -1.75rem;
+    width: 13.75rem;
+}
+
+@media (max-width: 991.98px) {
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-image {
+        margin-inline: auto;
+    }
+
+    .hero-card {
+        right: 0;
+    }
+
+    .hero-card-bottom {
+        left: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .hero-title {
+        font-size: 2.3rem;
+    }
+
+    .hero-badge {
+        font-size: .7rem;
+        gap: .25rem;
+        white-space: nowrap;
+        padding: .5rem .75rem;
+    }
+
+    .hero-badge,
+    .hero-title,
+    .hero p {
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .hero-card,
+    .hero-card-bottom {
+        width: 10.625rem;
+
+        h2 {
+            font-size: 1.75rem;
+        }
+
+        p {
+            font-size: .8rem;
+        }
+    }
+}

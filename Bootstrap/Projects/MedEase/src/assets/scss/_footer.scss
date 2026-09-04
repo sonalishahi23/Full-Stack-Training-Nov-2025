@@ -1,0 +1,37 @@
+.footer {
+  background: $black;
+
+  .footer-logo {
+    color: $primary-color;
+  }
+
+  .footer-desc {
+    max-width: 22rem;
+    color: $text-color;
+  }
+
+  h6 {
+    color: $white;
+  }
+
+  .social-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: $primary-color;
+    transition: $transition;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  a:not(.footer-logo) {
+    color: $text-color;
+    transition: $transition;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.hero {
+
+    .hero-banner,
+    .hero-right {
+        height: $hero-height;
+    }
+
+    .hero-card {
+        height: calc(50% - 0.5rem);
+    }
+
+
+    .hero-content {
+        max-width: 80%;
+
+        h1 {
+            letter-spacing: -2px;
+        }
+    }
+}
+
+
+.hero {
+    @media (min-width: 992px) {
+
+        .hero-banner,
+        .hero-right {
+            height: $hero-height;
+        }
+
+        .hero-card {
+            height: calc(50% - 0.5rem);
+            width: 100% !important;
+        }
+    }
+
+
+    @media (max-width: 991px) {
+        .hero-right {
+            height: auto !important;
+        }
+
+        .hero-card {
+            height: 14rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .btn {
+            padding: .65rem 1.5rem;
+            font-size: .875rem;
+        }
+    }
+}
+
+.casual {
+
+    .casual-card {
+        height: $hero-card-height;
+
+        @media (min-width: 992px) {
+            height:$casual-card-height;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+
+        .row {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .row::-webkit-scrollbar {
+            display: none;
+        }
+
+    }
+
+}

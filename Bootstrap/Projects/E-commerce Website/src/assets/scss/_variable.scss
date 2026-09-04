@@ -1,0 +1,230 @@
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+
+$primary: #000000;
+$secondary: #666666;
+$white: #FFFFFF;
+
+$gray-100: #F8F8F8;
+$gray-200: #F3F3F3;
+$gray-300: #E5E5E5;
+$gray-400: #D9D9D9;
+$gray-500: #808080;
+$gray-600: #666666;
+$gray-700: #4D4D4D;
+$gray-800: #333333;
+$gray-900: #1A1A1A;
+
+$body-bg: #FFFFFF;
+$body-color: $gray-700;
+
+$footer-bg: #151515;
+$footer-input-border: #5C5F6A;
+$footer-text-color: $gray-500;
+$footer-heading-color: $white;
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+$enable-rfs: false;
+
+$font-family-base: "Inter", sans-serif;
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$headings-font-weight: 500;
+$headings-line-height: 1.2;
+$headings-color: $gray-900;
+
+$display-font-sizes: (
+  1: 4rem,
+  2: 3rem,
+  3: 2.5rem,
+  4: 2rem,
+  5: 1.75rem,
+  6: 1.5rem
+);
+
+$display-font-weight: 300;
+
+
+/* Font Weight */
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+/* Line Height */
+
+$line-height-tight: 1;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.7;
+
+
+/* Letter Spacing */
+
+$letter-spacing-sm: .08em;
+
+
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+
+$link-decoration: none;
+
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+$navbar-padding-y: 1rem;
+$navbar-brand-padding-y: 0;
+$navbar-brand-font-size: 2rem;
+
+$navbar-light-color: $gray-900;
+$navbar-brand-margin-end: 2rem;
+
+$nav-link-padding-y: .5rem;
+$navbar-nav-link-padding-x: 1rem;
+
+
+/*--------------------------------------------------------------
+# Borders & Radius
+--------------------------------------------------------------*/
+
+$border-color: $gray-300;
+$border-radius: .5rem;
+$border-radius-pill: 50rem;
+
+$section-radius: 2.5rem;
+$image-radius: 2.5rem;
+$product-card-radius: 2rem;
+
+
+/*--------------------------------------------------------------
+# Transition & Hover
+--------------------------------------------------------------*/
+
+$transition-base: all .3s ease-in-out;
+
+$hover-scale: 1.03;
+$hover-duration: .3s;
+
+
+/*--------------------------------------------------------------
+# Grid & Container
+--------------------------------------------------------------*/
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+
+/*--------------------------------------------------------------
+# Spacing
+--------------------------------------------------------------*/
+
+$section-padding-y: 6rem;
+$section-padding-sm: 4rem;
+
+$content-padding: 5rem;
+$content-padding-mobile: 2rem;
+
+$card-gap: 1.5rem;
+$mobile-padding: 1rem;
+
+
+/*--------------------------------------------------------------
+# Common Components
+--------------------------------------------------------------*/
+
+$input-height: 3.5rem;
+$btn-height: 3.5rem;
+
+$btn-border-radius: 50rem;
+$btn-font-weight: 600;
+$btn-padding-x: 2rem;
+$btn-padding-y: .875rem;
+
+
+/*--------------------------------------------------------------
+# Project Layout
+--------------------------------------------------------------*/
+
+/* Heights */
+
+$hero-height: 42rem;
+$hero-card-height: 20rem;
+
+$casual-card-height: 26rem;
+
+$product-image-small: 18rem;
+$product-image-large: 21rem;
+
+$testimonial-height: 38rem;
+
+
+/* Widths */
+
+$hero-content-width: 30rem;
+$hero-text-width: 28rem;
+$text-width: 30rem;
+$newsletter-width: 20rem;
+
+
+/* Overlay */
+
+$overlay-dark: rgba(0, 0, 0, .35);
+$overlay-light: rgba(0, 0, 0, .15);
+
+// Custom layout variables
+$slide-min-height: 480px;
+$slide-overlay-color: rgba(26, 25, 24, 0.85);
+
+
+/* Z-index */
+
+$z-overlay: 2;
+$z-content: 3;
+
+
+/* Shadows */
+
+$card-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+
+/* Icons */
+
+$wishlist-icon-size: 2rem;
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+$footer-padding-y: 6rem;

@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive E-commerce Website using Bootstrap 5 and SCSS">
+    <meta name="keywords" content="Ecommerce, Bootstrap, SCSS, Vite, HTML, CSS">
+    <meta name="author" content="Your Name">
+    <title>E-commerce Website</title>
+
+    <link rel="icon" type="image/png" href="./assets/images/E-commerce_favicon.jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script type="module" src="./assets/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <!-- Top Header -->
+        <section class="top-header border-bottom py-2">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+
+                    <!-- Left -->
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-decoration-none text-secondary small">English</a>
+                        <a href="#" class="text-decoration-none text-secondary small">Dollar</a>
+                    </div>
+                    <!-- Right -->
+                    <nav aria-label="Top Navigation">
+                        <ul class="list-unstyled d-flex flex-wrap gap-3 gap-md-4 mb-0">
+                            <li>
+                                <a href="#" class="text-decoration-none text-secondary small">
+                                    Tracking Package
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-decoration-none text-secondary small">
+                                    FAQ
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-decoration-none text-secondary small">
+                                    About Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-decoration-none text-secondary small">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold fs-2 text-dark mb-0" href="#">
+                    ECOMMERCE
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse mt-3 mt-lg-0" id="mainNavbar">
+
+                    <!-- Search -->
+                    <form class="search-form d-flex mx-lg-4 my-3 my-lg-0" role="search">
+
+                        <div class="search-box input-group">
+
+                            <input type="search" class="form-control rounded-start-pill border-end-0"
+                                placeholder="Search here" name="search" aria-label="Search">
+
+                            <button class="btn bg-white border border-start-0 rounded-end-pill" type="submit"
+                                aria-label="Search">
+
+                                <img src="./assets/icons/search.svg" alt="Search">
+
+                            </button>
+
+
+                        </div>
+
+                    </form>
+
+                    <!-- Menu -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link fw-medium text-dark d-flex align-items-center gap-2" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                All Category
+                                <img src="./assets/icons/drop_down.svg" alt="Dropdown">
+
+                            </a>
+
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Men</a></li>
+                                <li><a class="dropdown-item" href="#">Women</a></li>
+                                <li><a class="dropdown-item" href="#">Kids</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gift Cards</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Special Event</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Icons -->
+                    <div class="header-icons d-flex align-items-center gap-4 mt-3 mt-lg-0">
+
+                        <a href="#" class="d-flex align-items-center justify-content-center" aria-label="Wishlist">
+                            <img src="./assets/icons/heart_outline.svg" alt="Wishlist">
+                        </a>
+
+                        <a href="#" class="d-flex align-items-center justify-content-center" aria-label="Profile">
+                            <img src="./assets/icons/profile_icon.svg" alt="Profile">
+                        </a>
+
+                        <a href="#" class="d-flex align-items-center justify-content-center" aria-label="Cart">
+                            <img src="./assets/icons/cart_icon.svg" alt="Cart">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero py-4 pb-0">
+
+        <div class="container">
+
+            <div class="row g-1">
+
+                <!-- Left Banner -->
+                <div class="col-12 col-lg-8">
+
+                    <div class="hero-banner position-relative overflow-hidden rounded-5">
+
+                        <img src="./assets/images/Summer.jpg" class="img-fluid w-100 h-100 object-fit-cover"
+                            alt="Summer Banner">
+
+                        <div class="hero-content position-absolute top-0 start-0 p-5">
+
+                            <h1 class="display-1 text-white fw-light lh-1 mb-4">
+                                Color of <br>
+                                Summer <br>
+                                Outfit
+                            </h1>
+
+                            <p class="text-white mb-4">
+                                100+ Collections for your outfit <br>
+                                inspirations in this summer
+                            </p>
+
+                            <a href="#" class="btn btn-dark px-5 rounded-pill">
+                                VIEW COLLECTIONS
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-12 col-lg-4 ps-lg-3 mt-3 mt-lg-0">
+
+                    <div
+                        class="right-column d-flex flex-row flex-lg-column justify-content-between hero-right overflow-x-auto pb-2 pb-lg-0 gap-3 gap-lg-0">
+
+                        <!-- Card 1 -->
+                        <div class="hero-card position-relative rounded-5 overflow-hidden flex-shrink-0 w-75 w-lg-100">
+
+                            <img src="./assets/images/Outdoor.jpg" class="hero-img d-block w-100 h-100 object-fit-cover"
+                                alt="Outdoor Active">
+
+                            <div class="position-absolute top-0 start-0 p-4 w-100">
+
+                                <h2 class="display-6 fw-normal">
+                                    Outdoor <br>
+                                    Active
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="hero-card position-relative rounded-5 overflow-hidden flex-shrink-0 w-75 w-lg-100 ">
+
+                            <img src="./assets/images/Casual.jpg" class="hero-img d-block w-100 h-100 object-fit-cover"
+                                alt="Casual Comfort">
+
+                            <div class="position-absolute top-0 start-0 p-4 w-100">
+
+                                <h2 class="display-6 fw-normal">
+                                    Casual <br>
+                                    Comfort
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Casual Inspiration Section -->
+    <section class="casual py-3">
+
+        <div class="container">
+
+            <div
+                class="row g-3 flex-row flex-nowrap flex-lg-wrap align-items-stretch overflow-x-auto pb-3 pb-lg-0 mx-0">
+
+                <!-- Left Content -->
+                <div class="col-10 col-lg-4 d-flex flex-column justify-content-center align-items-start flex-shrink-0">
+
+                    <h2 class="display-2 fw-light lh-1 mb-2">
+                        Casual <br>
+                        Inspirations
+                    </h2>
+
+                    <p class="text-secondary mb-4">
+                        Our favorite combinations for casual<br class="d-none d-lg-block">
+                        outfit that can inspire you to apply on<br class="d-none d-lg-block">
+                        your daily activity.
+                    </p>
+
+                    <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2 w-auto text-uppercase">
+                        Browse Inspirations
+                    </a>
+
+                </div>
+
+
+                <!-- Middle Card -->
+                <div class="col-10 col-lg-4 flex-shrink-0 flex-lg-shrink-1">
+
+                    <div class="casual-card position-relative rounded-5 overflow-hidden h-100">
+
+                        <img src="./assets/images/two_boys.jpg" class="w-100 h-100 object-fit-cover" alt="Shirt">
+
+                        <div class="position-absolute bottom-0 start-0 p-4 text-white">
+
+                            <h3 class="text-white display-6 fw-light lh-1 mb-0">
+                                Say it <br>
+                                with Shirt
+                            </h3>
+
+                        </div>
+                        <a href="#" class="position-absolute bottom-0 end-0 p-4">
+                            <img src="./assets/icons/short_right.svg" alt="Arrow">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Card -->
+                <div class="col-10 col-lg-4 flex-shrink-0 flex-lg-shrink-1">
+
+                    <div class="casual-card position-relative rounded-5 overflow-hidden h-100">
+
+                        <img src="./assets/images/Funky.jpg" class="w-100 h-100 object-fit-cover" alt="Funky">
+
+                        <div class="position-absolute bottom-0 start-0 p-4 text-white">
+
+                            <h3 class="text-white display-6 fw-light lh-1 mb-0">
+                                Funky never <br>
+                                get old
+                            </h3>
+
+                        </div>
+
+                        <a href="#" class="position-absolute bottom-0 end-0 p-4">
+                            <img src="./assets/icons/short_right.svg" alt="Arrow">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Trending Section ================= -->
+
+
+    <section class="trending py-5 border-top border-secondary-subtle my-4">
+
+        <div class="container">
+
+            <!-- Heading & Tabs -->
+
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mb-4">
+
+                <h2 class="display-6 fw-normal mb-3 mb-lg-0 text-dark">
+                    Trending
+                </h2>
+
+                <ul class="nav nav-pills gap-2 flex-nowrap overflow-x-auto pb-2 text-nowrap no-scrollbar"
+                    id="trendingTab" role="tablist">
+
+                    <li class="nav-item">
+                        <button class="nav-link rounded-pill px-3" data-bs-toggle="pill" data-bs-target="#shorts"
+                            type="button">
+                            SHORTS
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link rounded-pill px-3" data-bs-toggle="pill" data-bs-target="#hat"
+                            type="button">
+                            HAT
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link rounded-pill px-3" data-bs-toggle="pill" data-bs-target="#jackets"
+                            type="button">
+                            JACKETS
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link active rounded-pill px-3" data-bs-toggle="pill" data-bs-target="#shoes"
+                            type="button">
+                            SHOES
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link rounded-pill px-3" data-bs-toggle="pill" data-bs-target="#tshirt"
+                            type="button">
+                            T-SHIRT
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- ================= TAB CONTENT ================= -->
+
+            <div class="tab-content">
+
+                <!-- ================= SHOES ================= -->
+                <div class="tab-pane fade show active" id="shoes">
+
+                    <!-- First Row -->
+                    <div class="row g-3">
+
+                        <!-- Card 1 -->
+                        <div class="col-6 col-lg-3">
+                            <div class="card border-0">
+                                <div class="position-relative">
+                                    <img src="./assets/images/Black_shoe.jpg" class="card-img rounded-5 product-img"
+                                        alt="">
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/heart_fill.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">Casual Shoe</h5>
+                                    <p class="text-secondary mb-0">$225</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-6 col-lg-3">
+                            <div class="card border-0">
+                                <div class="position-relative">
+                                    <img src="./assets/images/Green_shoe.jpg" class="card-img rounded-5 product-img"
+                                        alt="">
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">Skateboard Shoe</h5>
+                                    <p class="text-secondary mb-0">$125</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Big Card -->
+                        <div class="col-12 col-lg-6">
+                            <div class="card border-0">
+                                <div class="position-relative">
+                                    <img src="./assets/images/red_shoe.jpg" class="card-img rounded-5 product-img"
+                                        alt="">
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">Skateboard Shoe</h5>
+                                    <p class="text-secondary mb-0">$125</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="row g-3 ">
+
+                        <!-- Big Card -->
+                        <div class="col-6 col-lg-6">
+                            <div class="card border-0">
+                                <div class="position-relative">
+                                    <img src="./assets/images/white_green.jpg" class="card-img rounded-5 product-img"
+                                        alt="">
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">Skateboard Shoe</h5>
+                                    <p class="text-secondary mb-0">$125</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="col-6 col-lg-3">
+                            <div class="card border-0">
+                                <div class="position-relative">
+                                    <img src="./assets/images/black_white.jpg" class="card-img rounded-5 product-img"
+                                        alt="">
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">Basket Shoe</h5>
+                                    <p class="text-secondary mb-0">$125</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="col-12 col-lg-3">
+                            <div class="card border-0">
+                                <div class="position-relative">
+                                    <img src="./assets/images/orange.jpg" class="card-img rounded-5 product-img" alt="">
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">Sportwear Shoe</h5>
+                                    <p class="text-secondary mb-0">$159</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= SHORTS ================= -->
+
+                <div class="tab-pane fade" id="shorts">
+
+                    <!-- First Row -->
+
+                    <div class="row g-3 ">
+
+                        <!-- Card 1 -->
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/casual_short.webp" class="card-img rounded-5 product-img"
+                                        alt="Shorts">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/heart_fill.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Casual Shorts
+                                    </h5>
+                                    <p class="text-secondary mb-0">$89</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card 2 -->
+
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/denim_short.webp" class="card-img rounded-5 product-img"
+                                        alt="Shorts">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Denim Shorts
+                                    </h5>
+                                    <p class="text-secondary mb-0">$110</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Big Card -->
+
+                        <div class="col-12 col-lg-6">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/sports_shorts.png" class="card-img rounded-5 product-img"
+                                        alt="Shorts">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Sport Shorts
+                                    </h5>
+                                    <p class="text-secondary mb-0">$135</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Second Row -->
+
+                    <div class="row g-3">
+
+                        <!-- Big Card -->
+
+                        <div class="col-6 col-lg-6">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/cotton.webp" class="card-img rounded-5 product-img"
+                                        alt="Shorts">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Cotton Shorts
+                                    </h5>
+                                    <p class="text-secondary mb-0">$95</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card -->
+
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/running_shorts.jpeg"
+                                        class="card-img rounded-5 product-img" alt="Shorts">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Running Shorts
+                                    </h5>
+                                    <p class="text-secondary mb-0">$120</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card -->
+
+                        <div class="col-12 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/summer_shorts.webp" class="card-img rounded-5 product-img"
+                                        alt="Shorts">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Summer Shorts
+                                    </h5>
+                                    <p class="text-secondary mb-0">$99</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= HATS ================= -->
+
+                <div class="tab-pane fade" id="hat">
+
+                    <!-- First Row -->
+
+                    <div class="row g-3 ">
+
+                        <!-- Card 1 -->
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/casual_hat.webp" class="card-img rounded-5 product-img"
+                                        alt="Hat">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/heart_fill.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Casual Cap
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $45
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card 2 -->
+
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/bucket_hat.webp" class="card-img rounded-5 product-img"
+                                        alt="Hat">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Bucket Hat
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $55
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Big Card -->
+
+                        <div class="col-12 col-lg-6">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/baseball_cap.jpeg" class="card-img rounded-5 product-img"
+                                        alt="Hat">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Baseball Cap
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $60
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Second Row -->
+
+                    <div class="row g-3">
+
+                        <!-- Big Card -->
+
+                        <div class="col-6 col-lg-6">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/classic_hat.webp" class="card-img rounded-5 product-img"
+                                        alt="Hat">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Classic Hat
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $70
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card -->
+
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/outdoor_hat.webp" class="card-img rounded-5 product-img"
+                                        alt="Hat">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Outdoor Hat
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $50
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card -->
+
+                        <div class="col-12 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/Fashion_cap.jpeg" class="card-img rounded-5 product-img"
+                                        alt="Hat">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+                                        <img src="./assets/icons/like_icon.svg" alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Fashion Cap
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $48
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= JACKETS ================= -->
+
+                <div class="tab-pane fade" id="jackets">
+
+                    <div class="row g-3 ">
+
+                        <!-- Card 1 -->
+
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/denim_jacket.webp" class="card-img rounded-5 product-img"
+                                        alt="Jacket">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/heart_fill.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Denim Jacket
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $145
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card 2 -->
+
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/leather_jacket.webp"
+                                        class="card-img rounded-5 product-img" alt="Jacket">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/like_icon.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Leather Jacket
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $195
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Big Card -->
+
+                        <div class="col-12 col-lg-6">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/winter_jackett.webp"
+                                        class="card-img rounded-5 product-img" alt="Jacket">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/like_icon.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Winter Jacket
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $235
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Second Row -->
+
+                    <div class="row g-3">
+
+                        <div class="col-6 col-lg-6">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/Hoodie_jacket.jpeg" class="card-img rounded-5 product-img"
+                                        alt="Jacket">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/like_icon.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Hoodie Jacket
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $165
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/Casuaul_jacket.webp"
+                                        class="card-img rounded-5 product-img" alt="Jacket">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/like_icon.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Casual Jacket
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $175
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/Bomber_jacket.webp" class="card-img rounded-5 product-img"
+                                        alt="Jacket">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/like_icon.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Bomber Jacket
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $210
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= T-SHIRT ================= -->
+
+                <div class="tab-pane fade" id="tshirt">
+
+                    <!-- First Row -->
+
+                    <div class="row g-3 ">
+
+                        <!-- Card 1 -->
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/oversized_tee.webp" class="card-img rounded-5 product-img"
+                                        alt="T-Shirt">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/heart_fill.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Oversized Tee
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $89
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card 2 -->
+
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/cotton_tee.jpeg" class="card-img rounded-5 product-img"
+                                        alt="T-Shirt">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/like_icon.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Cotton Tee
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $75
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Big Card -->
+
+                        <div class="col-12 col-lg-6">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/graphic_tee.jpeg" class="card-img rounded-5 product-img"
+                                        alt="T-Shirt">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/like_icon.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Graphic T-Shirt
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $99
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Second Row -->
+
+                    <div class="row g-3">
+
+                        <!-- Big Card -->
+
+                        <div class="col-6 col-lg-6">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/printed_tee.webp" class="card-img rounded-5 product-img"
+                                        alt="T-Shirt">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/like_icon.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Printed Tee
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $110
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card -->
+
+                        <div class="col-6 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/polo_tee.webp" class="card-img rounded-5 product-img"
+                                        alt="T-Shirt">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/like_icon.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Polo Tee
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $120
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Card -->
+
+                        <div class="col-12 col-lg-3">
+
+                            <div class="card border-0">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/classic_tee.webp" class="card-img rounded-5 product-img"
+                                        alt="T-Shirt">
+
+                                    <a href="#" class="position-absolute top-0 end-0 p-3">
+
+                                        <img src="./assets/icons/like_icon.svg" alt="Wishlist">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fs-5 fw-medium mb-1">
+                                        Classic Tee
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $95
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Explore By Colors ================= -->
+
+    <section class="explore-colors py-5 border-top border-secondary-subtle my-4">
+
+        <div class="container">
+
+            <div class="row align-items-center gy-4">
+
+                <!-- Left Heading -->
+
+                <div class="col-12 col-lg-3">
+
+                    <h2 class="fw-light lh-1 mb-0 display-2 fs-2 fs-lg-1">
+                        <span class="d-lg-none">Explore By Colors</span>
+
+                        <span class="d-none d-lg-block  display-1">
+                            Explore <br>
+                            By Colors
+                        </span>
+                    </h2>
+
+                </div>
+
+                <!-- Right Color Buttons -->
+
+                <div class="col-12 col-lg-9 d-flex justify-content-center align-items-center">
+
+                    <div class="w-100">
+
+                        <!-- First Row -->
+                        <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
+
+                            <a href="#" class="color-pill">
+                                <span class="color-dot bg-danger"></span>
+                                RED PASTEL
+                            </a>
+
+                            <a href="#" class="color-pill">
+                                <span class="color-dot lime"></span>
+                                LIME GREEN
+                            </a>
+
+                            <a href="#" class="color-pill">
+                                <span class="color-dot navy"></span>
+                                NAVY BLUE
+                            </a>
+
+                            <a href="#" class="color-pill">
+                                <span class="color-dot white-dot"></span>
+                                CLEAN WHITE
+                            </a>
+
+                        </div>
+
+                        <!-- Second Row -->
+
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+
+                            <a href="#" class="color-pill">
+                                <span class="color-dot sky"></span>
+                                BLUE SKY
+                            </a>
+
+                            <a href="#" class="color-pill">
+                                <span class="color-dot purple"></span>
+                                PURPLE
+                            </a>
+
+                            <a href="#" class="color-pill">
+                                <span class="color-dot pink"></span>
+                                PINK
+                            </a>
+
+                            <a href="#" class="color-pill">
+                                <span class="color-dot yellow"></span>
+                                YELLOW
+                            </a>
+
+                            <a href="#" class="color-pill">
+                                <span class="color-dot green"></span>
+                                DARK GREEN
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+
+    <!-- ================= Testimonial Slider Section ================= -->
+    <section class="testimonial py-5">
+        <div class="container">
+
+            <div id="testimonialCarousel" class="carousel slide rounded-5 overflow-hidden" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- Slide -->
+                    <div class="carousel-item active">
+
+                        <div class="position-relative testimonial-card">
+
+                            <img src="./assets/images/lady.jpg" class="w-100 h-100 object-fit-cover" alt="">
+
+                            <!-- Overlay -->
+                            <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+                            <!-- Content -->
+                            <div
+                                class="position-absolute top-50 start-0 translate-middle-y text-white testimonial-content">
+
+                                <p class="text-white-50 fs-6 fw-normal mb-2 d-block tracking-wide">
+                                    What people said
+                                </p>
+
+                                <h2 class="display-2 text-white fw-normal mb-4 lh-sm">
+                                    Love the way they <br>
+                                    handle the order.
+                                </h2>
+
+                                <p class="text-white-50 fw-normal mb-5 body-description">
+                                    Very professional and friendly at the same time.
+                                    They packed the order on schedule and the detail
+                                    of their wrapping is top notch. One of my best
+                                    experience for buying online items.
+                                    Surely will come back for another purchase.
+                                </p>
+
+                                <div class="d-flex align-items-center gap-3 mb-3">
+
+                                    <img src="./assets/images/lady.jpg" class="rounded-circle d-md-none" width="48"
+                                        height="48" alt="Profile">
+
+                                </div>
+
+                                <div class="profile-meta">
+                                    <h5 class="fs-5 text-white fw-semibold mb-0">
+                                        Samantha William
+                                    </h5>
+                                    <span class="text-white-50 small">
+                                        Fashion Enthusiast
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+
+                        <div class="position-relative testimonial-card">
+
+                            <img src="./assets/images/lady2.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+
+                            <!-- Overlay -->
+                            <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+                            <!-- Content -->
+                            <div
+                                class="position-absolute top-50 start-0 translate-middle-y text-white testimonial-content">
+
+                                <p class="text-white-50 fs-6 fw-normal mb-2 d-block tracking-wide">
+                                    Customer Review
+                                </p>
+
+                                <h2 class="display-2 text-white fw-normal mb-4 lh-sm">
+                                    Shopping has never <br>
+                                    been this easy.
+                                </h2>
+
+                                <p class="text-white-50 fw-normal mb-5 body-description">
+                                    Everything arrived on time and the quality was even better than expected.
+                                    The website is simple to use, the products are premium,
+                                    and the customer support was incredibly helpful throughout the process.
+                                </p>
+
+                                <div class="d-flex align-items-center gap-3 mb-3">
+
+                                    <img src="./assets/images/lady2.jpeg" class="rounded-circle d-md-none" width="48"
+                                        height="48" alt="Profile">
+
+                                </div>
+
+                                <div class="profile-meta">
+                                    <h5 class="fs-5 text-white fw-semibold mb-0">
+                                        Emily Carter
+                                    </h5>
+
+                                    <span class="text-white-50 small">
+                                        Lifestyle Creator
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+
+                        <div class="position-relative testimonial-card">
+
+                            <img src="./assets/images/lady3.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+
+                            <!-- Overlay -->
+                            <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+                            <!-- Content -->
+                            <div
+                                class="position-absolute top-50 start-0 translate-middle-y text-white testimonial-content">
+
+                                <p class="text-white-50 fs-6 fw-normal mb-2 d-block tracking-wide">
+                                    Happy Customer
+                                </p>
+
+                                <h2 class="display-2 text-white fw-normal mb-4 lh-sm">
+                                    Every purchase <br>
+                                    feels worth it.
+                                </h2>
+
+                                <p class="text-white-50 fw-normal mb-5 body-description">
+                                    I absolutely love the quality and attention to detail in every
+                                    product. The ordering process was smooth, delivery was quick,
+                                    and everything arrived perfectly packaged. I'll definitely be
+                                    shopping here again.
+                                </p>
+
+                                <div class="d-flex align-items-center gap-3 mb-3">
+
+                                    <img src="./assets/images/lady3.jpeg" class="rounded-circle d-md-none" width="48"
+                                        height="48" alt="Profile">
+
+                                </div>
+
+                                <div class="profile-meta">
+                                    <h5 class="fs-5 text-white fw-semibold mb-0">
+                                        Olivia Bennett
+                                    </h5>
+
+                                    <span class="text-white-50 small">
+                                        Verified Customer
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Indicators -->
+                <div class="carousel-indicators mb-4 justify-content-start ms-5">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ================= Why Love Section ================= -->
+
+    <div class="border-bottom border-secondary-subtle my-4"></div>
+
+    <section class="why-love py-4">
+
+        <div class="container">
+
+            <h2 class="display-4 fw-normal mb-4">
+                Why you'll love to<br>
+                shop on our website
+            </h2>
+
+            <div class="row g-5">
+
+                <!-- Card 1 -->
+
+                <div class="col-md-4">
+
+                    <div class="service-icon rounded-circle d-flex justify-content-center align-items-center mb-4">
+                        <i class="bi bi-heart-fill text-white fs-4"></i>
+                    </div>
+
+                    <h4 class="fs-4 fw-medium mb-3">
+                        Take care with love
+                    </h4>
+
+                    <p class="text-secondary mb-0">
+                        We take care of your package with full attention
+                        and of course full of love. We want to make sure
+                        you'll receive your package like you receive your
+                        birthday gift.
+                    </p>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="col-md-4">
+
+                    <div class="service-icon rounded-circle d-flex justify-content-center align-items-center mb-4">
+                        <i class="bi bi-telephone-fill text-white fs-4"></i>
+                    </div>
+
+                    <h4 class="fs-4 fw-medium mb-3">
+                        Friendly Customer Service
+                    </h4>
+
+                    <p class="text-secondary mb-0">
+                        You do not need to worry when you want to
+                        check your package. We will always answer
+                        whatever your questions. Just click on the
+                        chat icon and we will talk.
+                    </p>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="col-md-4">
+
+                    <div class="service-icon rounded-circle d-flex justify-content-center align-items-center mb-4">
+                        <i class="bi bi-arrow-repeat text-white fs-4"></i>
+                    </div>
+
+                    <h4 class="fs-4 fw-medium mb-3">
+                        Refund Process
+                    </h4>
+
+                    <p class="text-secondary mb-0">
+                        Refund is a such bad experience and we don't
+                        want that thing happen to you. But when it's
+                        happen we will make sure you will through
+                        smooth and friendly process.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= From The Blog ================= -->
+
+    <div class="border-bottom border-secondary-subtle my-4"></div>
+
+    <section class="blog pt-5 pb-5">
+
+        <div class="container">
+
+            <h2 class="display-2 fw-normal mb-5">
+                From The Blog
+            </h2>
+
+            <div class="row align-items-center g-5">
+
+                <!-- Image -->
+
+                <div class="col-12 col-lg-6">
+
+                    <img src="./assets/images/daily_outfit.jpg" class="img-fluid rounded-5 w-100 blog-image" alt="Blog">
+
+                </div>
+
+                <!-- Content -->
+
+                <div class="col-12 col-lg-6">
+
+                    <h3 class="display-3 fw-light lh-base mb-4 blog-title">
+                        How to combine your<br>
+                        daily outfit to looks<br>
+                        fresh and cool.
+                    </h3>
+
+                    <p class="text-secondary mb-4">
+                        Maybe you don't need to buy new clothes to have nice,
+                        cool, fresh <br>looking outfit everyday. Maybe what you need
+                        is to combine your<br> clothes collections.
+                        Mix and match is the key.
+                    </p>
+
+                    <a href="#" class="btn btn-outline-dark rounded-pill px-4">
+                        READ MORE
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="footer text-white py-5">
+
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <!-- Left -->
+
+                <div class="col-12 col-lg-4">
+
+                    <a href="#" class="footer-logo d-inline-block fw-bold fs-2 text-white mb-4">
+                        ECOMMERCE
+                    </a>
+
+                    <p class="footer-desc text-secondary mt-4 mb-4">
+                        Ecommerce is a free UI Kit from Paperpillar
+                        that you can use for your personal or
+                        commercial project.
+                    </p>
+
+                    <form class="newsletter mt-4">
+
+                        <div class="d-flex flex-column flex-sm-row gap-3">
+
+                            <input type="email" class="form-control footer-input rounded-pill bg-transparent text-white"
+                                placeholder="Type your email address">
+
+                            <button type="submit"
+                                class="btn footer-btn bg-white text-dark fw-semibold rounded-pill border-0">
+
+                                Submit
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <!-- Right -->
+
+                <div class="col-12 col-lg-7 offset-lg-1">
+
+                    <div class="row">
+
+                        <div class="col-6 col-md-4">
+
+                            <h6 class="text-white fw-bold mb-4">POPULAR</h6>
+
+                            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+
+                                <li><a href="#" class="text-secondary">Shoes</a></li>
+                                <li><a href="#" class="text-secondary">T-Shirt</a></li>
+                                <li><a href="#" class="text-secondary">Jackets</a></li>
+                                <li><a href="#" class="text-secondary">Hat</a></li>
+                                <li><a href="#" class="text-secondary">Accessories</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="col-6 col-md-4">
+
+                            <h6 class="text-white fw-bold mb-4">MENU</h6>
+
+                            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+
+                                <li><a href="#" class="text-secondary">All Category</a></li>
+                                <li><a href="#" class="text-secondary">Gift Cards</a></li>
+                                <li><a href="#" class="text-secondary">Special Events</a></li>
+                                <li><a href="#" class="text-secondary">Testimonial</a></li>
+                                <li><a href="#" class="text-secondary">Blog</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-4 mt-4 mt-md-0">
+
+                            <h6 class="text-white fw-bold mb-4">OTHER</h6>
+
+                            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+
+                                <li><a href="#" class="text-secondary">Tracking Package</a></li>
+                                <li><a href="#" class="text-secondary">FAQ</a></li>
+                                <li><a href="#" class="text-secondary">About Us</a></li>
+                                <li><a href="#" class="text-secondary">Contact Us</a></li>
+                                <li><a href="#" class="text-secondary">Terms and Conditions</a></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

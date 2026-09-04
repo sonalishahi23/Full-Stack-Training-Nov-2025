@@ -1,0 +1,12 @@
+.navbar-nav {
+  .nav-link {
+    color: $text-color;
+    margin-inline: .75rem;
+    transition: $transition;
+
+    &:hover,
+    &.active {
+      color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.blog {
+
+    .blog-image{
+        height: 22rem;
+        object-fit: cover;
+    }
+
+    h2{
+        max-width: 18rem;
+    }
+
+    h3{
+        max-width: 34rem;
+    }
+
+    p{
+        max-width: 30rem;
+        line-height: 1.7;
+    }
+
+}
+
+@media (max-width:991.98px){
+
+    .blog{
+
+        h2,
+        h3{
+            max-width:100%;
+        }
+
+        .blog-image{
+            height:18rem;
+        }
+
+    }
+
+}
