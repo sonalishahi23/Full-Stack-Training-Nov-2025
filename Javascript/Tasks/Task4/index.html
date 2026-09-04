@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Table</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 28px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 92%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 6px 8px;
+            text-align: left;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        button {
+            padding: 4px 10px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        dialog {
+            width: 350px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        dialog h2 {
+            margin-top: 0;
+        }
+
+        form div {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 95%;
+            padding: 6px;
+        }
+
+        .form-buttons {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>User Data Table</h1>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>DoB</th>
+                <th>Age</th>
+                <th>Salary</th>
+                <th>Skills</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="userTable"></tbody>
+
+    </table>
+
+
+    <!-- Edit Dialog Box -->
+
+    <dialog id="editDialog">
+
+        <h2>Edit User</h2>
+
+        <form id="editForm">
+
+            <div>
+                <label for="editName">Name</label>
+                <input type="text" id="editName" required>
+            </div>
+
+            <div>
+                <label for="editDob">Date of Birth</label>
+                <input type="date" id="editDob" required>
+            </div>
+
+            <div>
+                <label for="editSalary">Salary</label>
+                <input type="number" id="editSalary" required>
+            </div>
+
+            <div>
+                <label for="editSkills">Skills</label>
+                <input type="text" id="editSkills" required>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">Update</button>
+                <button type="button" id="cancelButton">Cancel</button>
+            </div>
+
+        </form>
+
+    </dialog>
+
+
+    <script src="task4.js"></script>
+
+</body>
+
+</html>
