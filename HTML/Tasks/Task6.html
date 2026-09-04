@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1" />
+    <title>User Registration Form</title>
+</head>
+<body>
+
+<header>
+    <h1>User Registration Form</h1>
+</header>
+
+<main>
+    <form action="#" method="get">
+
+        <div>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName"  name="fullName" required minlength="3" maxlength="50"
+            title="Enter name between 3 to 50 characters">
+        </div><br>
+
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username"  name="username" required minlength="5" maxlength="15" pattern="[A-Za-z0-9]{5,15}"
+             title="Username must be 5 to 15 alphanumeric characters">
+        </div><br>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            title="Enter a valid email address"
+            placeholder="abc@gmail.com">
+        </div><br>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="6" maxlength="20"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9]).{6,20}"
+            title="Password must be 6-20 characters and include 1 uppercase, 1 lowercase, 1 number, and 1 special character">
+        </div><br>
+
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required pattern="^(?:\+91|91|0)?[6-9]\d{9}$" 
+            title="Please enter a valid Indian number "
+            placeholder="+91-XXXXXXXXXX">
+        </div><br>
+
+        <div>
+            <label>Gender</label>
+            <input type="radio" name="gender" id="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" required>
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" id="other" required>
+            <label for="other">Other</label>
+        </div><br>
+
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required 
+            min="1966-01-01"
+            max="2008-12-31"
+            title="Age must be between 18 and 60">
+        </div><br>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required min="18" max="60"
+            title="Age must be between 18 and 60">
+        </div><br>
+
+        <div>
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+                <option>Nepal</option>
+                <option>Other</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label>Skills</label><br>
+            <input type="checkbox" name="skills "id="html">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" name="skills" id="css">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" name="skills" id="js">
+            <label for="js">JavaScript</label>
+
+            <input type="checkbox" name="skills" id="react">
+            <label for="react">React</label>
+
+            <input type="checkbox" name="skills" id="python">
+            <label for="python">Python</label>
+        </div><br>
+
+        <div>
+            <label for="website">Website</label>
+            <input type="url" id="website"  name="website">
+        </div><br>
+
+        <div>
+            <label for="profile">Profile Picture</label>
+            <input type="file" id="profile" name="profile" accept=".jpg,.png"
+            title="Upload only JPG or PNG image">
+        </div><br>
+
+        <div>
+            <label for="about">About Yourself</label><br>
+            <textarea id="about" name="about" rows="4" cols="40" maxlength="400"
+            title="Maximum 400 characters allowed"></textarea>
+        </div><br>
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+</main>
+
+</body>
+</html>
