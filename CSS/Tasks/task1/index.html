@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Tasks</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Task 1 -->
+
+    <ul class="nav d-flex justify-content-between border border-primary p-3 w-50">
+        <li class="bg-primary text-white px-3 py-2 rounded">Home</li>
+        <li class="bg-primary text-white px-3 py-2 rounded">About Us</li>
+        <li class="bg-primary text-white px-3 py-2 rounded">Our Products</li>
+        <li class="bg-primary text-white px-3 py-2 rounded">Contact Us</li>
+    </ul>
+
+
+    <!-- Task 2 -->
+
+    <ul class="columns d-flex align-items-stretch border border-primary p-2">
+
+        <li class="flex-fill bg-primary text-white p-3 border rounded">
+            I am small
+        </li>
+
+        <li class="flex-fill bg-primary text-white p-3 border rounded">
+            I have more content than the very small item.
+        </li>
+
+        <li class="flex-fill bg-primary text-white p-3 border rounded">
+            I have lots of content. So much content that I don't know where it is all going to go. I'm glad that CSS is
+            pretty good at dealing with situations where we end up with more words than expected!
+        </li>
+
+    </ul>
+
+    <!-- Task 3 -->
+    <div class="parent d-flex justify-content-center align-items-center border rounded">
+
+        <div class="child d-flex align-items-center ps-3 bg-primary text-white">
+            Center me.
+        </div>
+
+    </div>
+
+    <!-- Task 4 -->
+
+    <div class="tags-wrapper border rounded p-4 mt-4 d-flex flex-column gap-3">
+
+    <ul class="tags-row row-of-4 d-flex flex-wrap gap-3 list-unstyled">
+        <li class="bg-primary text-white rounded p-3 flex-fill text-center">Turnip</li>
+        <li class="bg-primary text-white rounded p-3 flex-fill text-center">greens</li>
+        <li class="bg-primary text-white rounded p-3 flex-fill text-center">yarrow</li>
+        <li class="bg-primary text-white rounded p-3 flex-fill text-center">ricebean</li>
+    </ul>
+
+    <ul class="tags-row row-of-3 d-flex flex-wrap gap-3 list-unstyled">
+        <li class="bg-primary text-white rounded p-3 flex-fill text-center">rutabaga</li>
+        <li class="bg-primary text-white rounded p-3 flex-fill text-center">endive</li>
+        <li class="bg-primary text-white rounded p-3 flex-fill text-center">cauliflower</li>
+        <li class="bg-primary text-white rounded p-3 flex-fill text-center">sea lettuce</li>
+        <li class="bg-primary text-white rounded p-3 flex-fill text-center">kohlrabi</li>
+        <li class="bg-primary text-white rounded p-3 flex-fill text-center">amaranth</li>
+    </ul>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 Flexbox</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app-container d-flex">
+
+
+    <aside class="sidebar d-flex flex-column ">
+
+      <div class="sidebar-top border-top border-bottom border-start"></div>
+
+      <div class="sidebar-menu"></div>
+    </aside>
+
+
+    <div class="main-content-wrapper  d-flex flex-column flex-grow-1 overflow-y-auto">
+
+      <header class="top-navbar border-top border-bottom"></header>
+      <main class="dashboard-body p-5">
+
+        <div class="hero-banner rounded-5 mb-5""></div>
+        <div class="bottom-content-grid">
+
+
+          <div class="left-column d-flex flex-column gap-4">
+
+
+            <div class="card-row-three border rounded-5 p-4">
+              <div class="square-card"></div>
+              <div class="square-card"></div>
+              <div class="square-card"></div>
+            </div>
+
+
+            <div class="card-row-two border rounded-5 p-4">
+              <div class="wide-card"></div>
+              <div class="small-card"></div>
+            </div>
+          </div>
+
+
+          <div class="right-column d-flex">
+            <div class="split-card d-flex flex-column border rounded-5 overflow-hidden">
+              <div class="split-card-top"></div>
+              <div class="split-card-bottom"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer-row-container d-flex align-items-start gap-3 mt-5">
+
+
+          <div class="footer-card card-grey-short"></div>
+
+
+          <div class="footer-card card-split-half d-flex flex-column">
+            <div class="split-top"></div>
+            <div class="split-bottom"></div>
+          </div>
+
+
+          <div class="footer-card card-grey-tall"></div>
+
+
+          <div class="footer-card card-white-solid"></div>
+
+
+          <div class="footer-card card-white-small"></div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

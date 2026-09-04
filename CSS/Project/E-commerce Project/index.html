@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SHOP.CO is an online fashion store offering trendy clothing, new arrivals, 
+        premium brands, and stylish outfits for men and women.">
+    <meta name="keywords" content="fashion, clothing, online shopping, shop.co, trendy clothes, men's fashion,
+        women's fashion, new arrivals, fashion store, style">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sonali">
+
+
+    <title>SHOP.CO - Find Clothes That Match Your Style</title>
+
+    <link rel="icon" href="./Assets/Icon/Star_icon.svg">
+    <link rel="stylesheet" href="./E-commerce CSS/common_styling.css">
+    <link rel="stylesheet" href="./E-commerce CSS/styling.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="announcement-bar">
+            <div class="container text-center">
+                <p class="announcement-text">
+                    Sign up and get 20% off to your first order.
+                    <a href="#" class="signup-link">Sign Up Now</a>
+                </p>
+                <img src="./Assets/Icon/cross.svg" alt="cross" class="close-icon">
+            </div>
+        </div>
+        <nav class="navbar">
+
+            <div class="container d-flex align-center justify-between">
+
+                <!-- Mobile Menu Button (Hidden on Desktop) -->
+                <button class="menu-toggle-btn" aria-label="Open Menu">
+                    <img src="./Assets/Icon/Menu_icon.svg" alt="Menu Icon">
+                </button>
+
+                <!-- Brand Name -->
+                <div class="brand-logo">
+                    <a href="index.html" class="brand-name">
+                        SHOP.CO
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu d-flex align-center">
+
+                    <li class="nav-item d-flex align-center">
+                        <a href="#" class="nav-link d-flex align-center">
+                            Shop
+                            <img src="./Assets/Icon/Dropdown.svg" alt="Dropdown" class="dropdown-icon">
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">On Sale</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">New Arrivals</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Brands</a>
+                    </li>
+
+                </ul>
+
+                <!-- Search Box -->
+                <form class="search-box d-flex align-center" role="search" action="#" method="GET">
+
+                    <img src="./Assets/Icon/search.svg" alt="Search" class="search-icon">
+
+                    <input type="search" id="search" name="search" class="search-input"
+                        placeholder="Search for products...">
+
+                </form>
+
+                <!-- User Actions -->
+                <div class="user-actions d-flex align-center">
+
+                    <!-- Mobile Search Icon  (Hidden on Desktop) -->
+                    <a href="#" class="mobile-search-link">
+                        <img src="./Assets/Icon/Mobile_search.svg" alt="Search Icon">
+                    </a>
+
+                    <a href="#" class="cart-link">
+                        <img src="./Assets/Icon/Cart_icon.svg" alt="Shopping Cart">
+                    </a>
+
+                    <a href="#" class="profile-link">
+                        <img src="./Assets/Icon/Profile_icon.svg" alt="User Profile">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section Start -->
+    <section class="hero-section">
+
+        <div class="container hero-container d-flex align-center justify-between">
+
+            <!-- Left Content -->
+            <div class="hero-left">
+
+                <h1 class="hero-title">
+                    FIND CLOTHES THAT MATCHES YOUR STYLE
+                </h1>
+
+                <p class="hero-description">
+                    Browse through our diverse range of meticulously crafted garments, designed
+                    to bring out your individuality and cater to your sense of style.
+                </p>
+
+                <a href="#" class="shop-btn">
+                    Shop Now
+                </a>
+
+                <!-- Statistics -->
+                <div class="stats-container d-flex align-center">
+
+                    <div class="stat-box">
+                        <h3 class="stat-number">200+</h3>
+                        <p class="stat-text">International Brands</p>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat-box">
+                        <h3 class="stat-number">2,000+</h3>
+                        <p class="stat-text">High-Quality Products</p>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat-box">
+                        <h3 class="stat-number">30,000+</h3>
+                        <p class="stat-text">Happy Customers</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Content -->
+            <div class="hero-right">
+
+                <img src="./Assets/Images/Model.jpg" alt="Fashion Models" class="hero-image">
+
+                <!-- Decorative Stars -->
+                <img src="./Assets/Icon/Star_icon.svg" alt="" class="star-icon star-large">
+
+                <img src="./Assets/Icon/small_star_icon.svg" alt="" class="star-icon star-small">
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Hero Section End -->
+
+
+    <!-- Brand Section Start -->
+    <section class="brands-section">
+
+        <div class="container brands-container d-flex align-center justify-between">
+
+            <img src="./Assets/Logos/Versace_logo.svg" alt="Versace" class="brand-image">
+
+            <img src="./Assets/Logos/Zara_logo.svg" alt="Zara" class="brand-image">
+
+            <img src="./Assets/Logos/Gucci_logo.svg" alt="Gucci" class="brand-image">
+
+            <img src="./Assets/Logos/Prada_logo.svg" alt="Prada" class="brand-image">
+
+            <img src="./Assets/Logos/Calvin_klein_logo.svg" alt="Calvin Klein" class="brand-image">
+
+        </div>
+
+    </section>
+    <!---NEW ARRIVALS SECTION -->
+    <section class="product-section">
+        <div class="container">
+
+            <h2 class="section-title">NEW ARRIVALS</h2>
+
+            <div class="products-grid">
+
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="image-box d-flex align-center justify-center">
+                        <img src="./Assets/Images/New_arrival_tshirt.jpg" alt="T-shirt with Tape Details">
+                    </div>
+                    <h3 class="product-name">T-shirt with Tape Details</h3>
+                    <div class="rating d-flex align-center">
+                        <div class="stars d-flex align-center">
+                            <img src="./Assets/Icon/full_star.svg" alt="One Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Two Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Three Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Four Star">
+                            <img src="./Assets/Icon/half_star.svg" alt="half Star">
+                        </div>
+                        <span class="rating-value">
+                            4.5/<span class="total-rating">5</span>
+                        </span>
+                    </div>
+                    <div class="price-container d-flex align-center">
+                        <span class="current-price">$120</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="image-box d-flex align-center justify-center">
+                        <img src="./Assets/Images/New_arrival_blue_jeans.jpg" alt="Skinny Fit Jeans">
+                    </div>
+                    <h3 class="product-name">Skinny Fit Jeans</h3>
+                    <div class="rating d-flex align-center">
+                        <div class="stars d-flex align-center">
+                            <img src="./Assets/Icon/full_star.svg" alt="One Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Two Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Three Star">
+                            <img src="./Assets/Icon/half_star.svg" alt="half Star">
+                        </div>
+                        <span class="rating-value">
+                            3.5/<span class="total-rating">5</span>
+                        </span>
+                    </div>
+                    <div class="price-container d-flex align-center">
+                        <span class="current-price">$240</span>
+                        <span class="old-price">$260</span>
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="image-box d-flex align-center justify-center">
+                        <img src="./Assets/Images/New_arrival_shirt.jpg" alt="Checkered Shirt">
+                    </div>
+                    <h3 class="product-name">Checkered Shirt</h3>
+                    <div class="rating d-flex align-center">
+                        <div class="stars d-flex align-center">
+                            <img src="./Assets/Icon/full_star.svg" alt="One Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Two Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Three Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Four Star">
+                            <img src="./Assets/Icon/half_star.svg" alt="half Star">
+                        </div>
+                        <span class="rating-value">
+                            4.5/<span class="total-rating">5</span>
+                        </span>
+                    </div>
+                    <div class="price-container d-flex align-center">
+                        <span class="current-price">$180</span>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="image-box d-flex align-center justify-center">
+                        <img src="./Assets/Images/New_arrival_stripped_tshirt.jpg" alt="Sleeve Striped T-shirt">
+                    </div>
+                    <h3 class="product-name">Sleeve Striped T-shirt</h3>
+                    <div class="rating d-flex align-center">
+                        <div class="stars d-flex align-center">
+                            <img src="./Assets/Icon/full_star.svg" alt="One Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Two Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Three Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Four Star">
+                            <img src="./Assets/Icon/half_star.svg" alt="half Star">
+                        </div>
+                        <span class="rating-value">
+                            4.5/<span class="total-rating">5</span>
+                        </span>
+                    </div>
+                    <div class="price-container d-flex align-center">
+                        <span class="current-price">$130</span>
+                        <span class="old-price">$160</span>
+                        <span class="discount-badge">-30%</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view-all-container">
+                <a href="#" class="view-all-btn d-flex justify-center">View All</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TOP SELLING SECTION -->
+    <section class="product-section divider-line">
+        <div class="container">
+
+            <h2 class="section-title">TOP SELLING</h2>
+
+            <div class="products-grid">
+
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="image-box d-flex align-center justify-center">
+                        <img src="./Assets/Images/TopSelling_shirt.jpg" alt="Vertical Striped Shirt">
+                    </div>
+                    <h3 class="product-name">Vertical Striped Shirt</h3>
+                    <div class="rating d-flex align-center">
+                        <div class="stars d-flex align-center"> 
+                            <img src="./Assets/Icon/full_star.svg" alt="One Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Two Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Three Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Four Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Five Star">
+                        </div>
+                        <span class="rating-value">
+                            5.0/<span class="total-rating">5</span>
+                        </span>
+                    </div>
+                    <div class="price-container d-flex align-center">
+                        <span class="current-price">$212</span>
+                        <span class="old-price">$232</span>
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="image-box d-flex align-center justify-center">
+                        <img src="./Assets/Images/TopSelling_tshirt.jpg" alt="Courage Graphic T-shirt">
+                    </div>
+                    <h3 class="product-name">Courage Graphic T-shirt</h3>
+                    <div class="rating d-flex align-center">
+                        <div class="stars d-flex align-center">
+                            <img src="./Assets/Icon/full_star.svg" alt="One Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Two Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Three Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Four Star">
+                        </div>
+                        <span class="rating-value">
+                            4.5/<span class="total-rating">5</span>
+                        </span>
+                    </div>
+                    <div class="price-container d-flex align-center">
+                        <span class="current-price">$145</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="image-box d-flex align-center justify-center">
+                        <img src="./Assets/Images/TopSelling_shorts.jpg" alt="Loose Fit Bermuda Shorts">
+                    </div>
+                    <h3 class="product-name">Loose Fit Bermuda Shorts</h3>
+                    <div class="rating d-flex align-center">
+                        <div class="stars d-flex align-center"> 
+                            <img src="./Assets/Icon/full_star.svg" alt="One Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Two Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Three Star">
+                        </div>
+                        <span class="rating-value">
+                            3.0/<span class="total-rating">5</span>
+                        </span>
+                    </div>
+                    <div class="price-container d-flex align-center">
+                        <span class="current-price">$80</span>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="image-box d-flex align-center justify-center">
+                        <img src="./Assets/Images/TopSelling_faded_black_jeans.jpg" alt="Faded Skinny Jeans">
+                    </div>
+                    <h3 class="product-name">Faded Skinny Jeans</h3>
+                    <div class="rating d-flex align-center">
+                        <div class="stars d-flex align-center"> 
+                            <img src="./Assets/Icon/full_star.svg" alt="One Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Two Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Three Star">
+                            <img src="./Assets/Icon/full_star.svg" alt="Four Star">
+                            <img src="./Assets/Icon/half_star.svg" alt="Four and half Star">
+                        </div>
+                        <span class="rating-value">
+                            4.5/<span class="total-rating">5</span>
+                        </span>
+                    </div>
+                    <div class="price-container d-flex align-center">
+                        <span class="current-price">$210</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view-all-container">
+                <a href="#" class="view-all-btn d-flex justify-center">View All</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Browse By Dress Style Section Start -->
+
+    <section class="dress-style-section">
+
+        <div class="dress-style-container">
+
+            <h2 class="section-title">
+                BROWSE BY DRESS STYLE
+            </h2>
+
+            <div class="dress-grid">
+
+                <a href="#" class="dress-card casual">
+                    <h3>Casual</h3>
+                    <img src="./Assets/Images/Dressstyle_casual.png" alt="Casual">
+                </a>
+
+                <a href="#" class="dress-card formal">
+                    <h3>Formal</h3>
+                    <img src="./Assets/Images/formal_dressstyle.png" alt="Formal">
+                </a>
+
+                <a href="#" class="dress-card party">
+                    <h3>Party</h3>
+                    <img src="./Assets/Images/Dressstyle_party.png" alt="Party">
+                </a>
+
+                <a href="#" class="dress-card gym">
+                    <h3>Gym</h3>
+                    <img src="./Assets/Images/Dressstyle_gym.png" alt="Gym">
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Browse By Dress Style Section End -->
+
+    <!-- Customer Testimonials Section Start -->
+
+    <section class="testimonials-section">
+        <div class="testimonials-header d-flex align-center justify-between">
+            <h2>OUR HAPPY CUSTOMERS</h2>
+            <div class="slider-arrows d-flex align-center">
+                <button class="arrow-btn prev-btn">
+                    <img src="./Assets/Icon/Left_arrow.svg" alt="Previous Button">
+                </button>
+                <button class="arrow-btn next-btn">
+                    <img src="./Assets/Icon/Right_arrow.svg" alt="Next Button">
+                </button>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="slider-track d-flex">
+
+                <!-- 1. Sarah M. -->
+                <div class="review-card d-flex">
+                    <div class="stars-container d-flex align-center">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                    </div>
+                    <div class="user-name d-flex align-center">
+                        Sarah M.
+                         <span class="verified-tick d-flex align-center">
+                            <img src="./Assets/Icon/Green_tick_icon.jpg" alt="Green Tick">
+                        </span>
+                    </div>
+                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                        From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                    </p>
+                </div>
+
+                <!-- 2. Alex K. -->
+                <div class="review-card d-flex">
+                    <div class="stars-container d-flex align-center">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                    </div>
+                    <div class="user-name d-flex align-center">
+                        Alex K. 
+                        <span class="verified-tick d-flex align-center">
+                            <img src="./Assets/Icon/Green_tick_icon.jpg" alt="Green Tick">
+                        </span>
+                    </div>
+                    <p>"Finding clothes that align with my personal style used to be a challenge until I discovered
+                        Shop.co.
+                        The range of options they offer is truly remarkable, catering to a variety of tastes and
+                        occasions.”</p>
+                </div>
+
+                <!-- 3. James L. -->
+                <div class="review-card d-flex">
+                    <div class="stars-container d-flex align-center">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                    </div>
+                    <div class="user-name d-flex align-center">
+                        James L. 
+                        <span class="verified-tick d-flex align-center">
+                            <img src="./Assets/Icon/Green_tick_icon.jpg" alt="Green Tick">
+                        </span>
+                    </div>
+                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+                        upon Shop.co.
+                        The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                </div>
+
+                <!-- 4. Sarah M. -->
+                <div class="review-card d-flex">
+                    <div class="stars-container d-flex align-center">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                    </div>
+                    <div class="user-name d-flex align-center">
+                        Sarah M.
+                         <span class="verified-tick d-flex align-center">
+                            <img src="./Assets/Icon/Green_tick_icon.jpg" alt="Green Tick">
+                        </span>
+                    </div>
+                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                        From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                    </p>
+                </div>
+
+                <!-- 5. Alex K. -->
+                <div class="review-card d-flex">
+                    <div class="stars-container d-flex align-center">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                    </div>
+                    <div class="user-name d-flex align-center">
+                        Alex K. 
+                        <span class="verified-tick d-flex align-center">
+                            <img src="./Assets/Icon/Green_tick_icon.jpg" alt="Green Tick">
+                        </span>
+                    </div>
+                    <p>"Finding clothes that align with my personal style used to be a challenge until I discovered
+                        Shop.co.
+                        The range of options they offer is truly remarkable, catering to a variety of tastes and
+                        occasions.”</p>
+                </div>
+
+                <!-- 6. James L. -->
+                <div class="review-card d-flex">
+                    <div class="stars-container d-flex align-center">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                    </div>
+                    <div class="user-name d-flex align-center">
+                        James L. 
+                        <span class="verified-tick d-flex align-center">
+                            <img src="./Assets/Icon/Green_tick_icon.jpg" alt="Green Tick">
+                        </span>
+                    </div>
+                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+                        upon Shop.co.
+                        The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                </div>
+
+                <!-- 7. Sarah M. -->
+                <div class="review-card d-flex">
+                    <div class="stars-container d-flex align-center">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                    </div>
+                    <div class="user-name d-flex align-center">
+                        Sarah M.
+                         <span class="verified-tick d-flex align-center">
+                            <img src="./Assets/Icon/Green_tick_icon.jpg" alt="Green Tick">
+                        </span>
+                    </div>
+                    <p>"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                        From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                    </p>
+                </div>
+
+                <!-- 8. Alex K. -->
+                <div class="review-card d-flex">
+                    <div class="stars-container d-flex align-center">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                    </div>
+                    <div class="user-name d-flex align-center">
+                        Alex K. 
+                        <span class="verified-tick d-flex align-center">
+                            <img src="./Assets/Icon/Green_tick_icon.jpg" alt="Green Tick">
+                        </span>
+                    </div>
+                    <p>"Finding clothes that align with my personal style used to be a challenge until I discovered
+                        Shop.co.
+                        The range of options they offer is truly remarkable, catering to a variety of tastes and
+                        occasions.”</p>
+                </div>
+
+                <!-- 9. James L. -->
+                <div class="review-card d-flex">
+                    <div class="stars-container d-flex align-center">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                        <img src="./Assets/Icon/full_star.svg" alt="Star" class="star-img">
+                    </div>
+                    <div class="user-name d-flex align-center">
+                        James L. 
+                        <span class="verified-tick d-flex align-center">
+                            <img src="./Assets/Icon/Green_tick_icon.jpg" alt="Green Tick">
+                        </span>
+                    </div>
+                    <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+                        upon Shop.co.
+                        The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Customer Testimonials Section End -->
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+
+        <div class="container">
+
+            <!-- Newsletter Banner -->
+            <section class="newsletter-banner d-flex align-center justify-between">
+
+                <h2 class="newsletter-title">
+                    STAY UPTO DATE ABOUT OUR LATEST OFFERS
+                </h2>
+
+                <form class="newsletter-form">
+
+                    <div class="input-wrapper d-flex align-center">
+
+                        <img src="./Assets/Icon/email_icon.svg" alt="Email Icon" class="email-icon">
+
+                        <input type="email" name="email" id="email" class="newsletter-input"
+                            placeholder="Enter your email address" required>
+
+                    </div>
+
+                    <button type="submit" class="subscribe-btn">
+                        Subscribe to Newsletter
+                    </button>
+
+                </form>
+
+            </section>
+
+            <!-- Footer Content -->
+            <div class="footer-content d-flex justify-between">
+
+                <!-- Brand Column -->
+                <div class="footer-brand">
+
+                    <h3 class="footer-logo">
+                        SHOP.CO
+                    </h3>
+
+                    <p class="footer-description">
+                        We have clothes that suits your style and <br>which you're proud to wear.
+                        From <br>women to men.
+                    </p>
+
+                    <div class="social-links d-flex align-center">
+
+                        <a href="#" class="social-link">
+                            <img src="./Assets/Logos/Twitter_logo.svg" alt="Twitter">
+                        </a>
+
+                        <a href="#" class="social-link">
+                            <img src="./Assets/Logos/facebook_logo.svg" alt="Facebook">
+                        </a>
+
+                        <a href="#" class="social-link">
+                            <img src="./Assets/Logos/Instagram_logo.svg" alt="Instagram">
+                        </a>
+
+                        <a href="#" class="social-link">
+                            <img src="./Assets/Logos/Github_logo.svg" alt="Github">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Company -->
+                <div class="footer-column">
+
+                    <h4 class="footer-heading">COMPANY</h4>
+
+                    <ul class="footer-links">
+
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Career</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Help -->
+                <div class="footer-column">
+
+                    <h4 class="footer-heading">HELP</h4>
+
+                    <ul class="footer-links">
+
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Delivery Details</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- FAQ -->
+                <div class="footer-column">
+
+                    <h4 class="footer-heading">FAQ</h4>
+
+                    <ul class="footer-links">
+
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Manage Deliveries</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Payments</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Resources -->
+                <div class="footer-column">
+
+                    <h4 class="footer-heading">RESOURCES</h4>
+
+                    <ul class="footer-links">
+
+                        <li><a href="#">Free eBooks</a></li>
+                        <li><a href="#">Development Tutorial</a></li>
+                        <li><a href="#">How To Blog</a></li>
+                        <li><a href="#">Youtube Playlist</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom d-flex align-center justify-between">
+
+                <p class="copyright">
+                    Shop.co © 2000-2023, All Rights Reserved
+                </p>
+
+                <div class="payment-methods d-flex align-center">
+
+                    <img src="./Assets/Logos/Visa_logo.svg" alt="Visa" class="payment-icon">
+
+                    <img src="./Assets/Logos/Mastercard_logo.svg" alt="Mastercard" class="payment-icon">
+
+                    <img src="./Assets/Logos/Paypal_logo.svg" alt="PayPal" class="payment-icon">
+
+                    <img src="./Assets/Logos/Applepay_logo.svg" alt="Apple Pay" class="payment-icon">
+
+                    <img src="./Assets/Logos/Gpay_logo.svg" alt="Google Pay" class="payment-icon">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>
