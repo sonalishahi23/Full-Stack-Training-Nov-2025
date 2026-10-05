@@ -1,4 +1,4 @@
-import DynamicProfileCard from "../components/Dynamic/DynamicProfileCard";
+import DynamicProfileCard from "../../components/Dynamic/DynamicProfileCard";
 
 function DynamicPage() {
     return (
@@ -32,8 +32,6 @@ function DynamicPage() {
                     description="I enjoy building clean and responsive user interfaces and using React."
                     image="https://api.dicebear.com/9.x/avataaars/svg?seed=Thomas"
                 />
-
-                <DynamicProfileCard />
 
             </div>
 
