@@ -1,4 +1,5 @@
 import ListGroup from "react-bootstrap/ListGroup";
+import Card from "react-bootstrap/Card";
 
 function RBListGroup() {
 
@@ -31,48 +32,46 @@ function RBListGroup() {
     ];
 
     return (
-        <div className="component-page">
+        <div className="container-fluid p-4">
 
-            <h1 className="component-title">
+            <h1 className="fw-bold mb-4">
                 List Group
             </h1>
 
-            <div className="social-card">
+            <Card className="mt-4 w-50">
+                <Card.Body>
 
-                <h2>
-                    Social Media Traffic
-                </h2>
+                    <Card.Title className="fs-4 fw-semibold mb-3">
+                        Social Media Traffic
+                    </Card.Title>
 
-                <ListGroup variant="flush">
+                    <ListGroup variant="flush">
 
-                    {socialMedia.map((social, index) => (
+                        {socialMedia.map((social, index) => (
 
-                        <ListGroup.Item
-                            key={index}
-                            className="social-item"
-                        >
+                            <ListGroup.Item
+                                key={index}
+                                className="d-flex justify-content-between align-items-center"
+                            >
 
-                            <div className="social-name">
+                                <div className="d-flex align-items-center gap-2">
+                                    <i className={`bi ${social.icon} text-primary`}></i>
 
-                                <i className={`bi ${social.icon}`}></i>
+                                    <span>{social.name}</span>
+                                </div>
 
-                                <span>
-                                    {social.name}
+                                <span className="fw-semibold">
+                                    {social.percentage}
                                 </span>
 
-                            </div>
+                            </ListGroup.Item>
 
-                            <span className="social-percentage">
-                                {social.percentage}
-                            </span>
+                        ))}
 
-                        </ListGroup.Item>
+                    </ListGroup>
 
-                    ))}
-
-                </ListGroup>
-
-            </div>
+                </Card.Body>
+            </Card>
 
         </div>
     );

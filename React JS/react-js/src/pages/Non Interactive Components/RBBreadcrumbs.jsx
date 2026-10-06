@@ -1,4 +1,6 @@
 import Breadcrumb from "react-bootstrap/Breadcrumb";
+import { Fragment } from "react";
+import { ChevronRight } from "react-bootstrap-icons";
 
 function RBBreadcrumbs() {
     return (
@@ -8,17 +10,22 @@ function RBBreadcrumbs() {
                 Breadcrumbs
             </h1>
 
-            {/* Basic Breadcrumb */}
+            
 
-            <div className="breadcrumb-example">
+            <div className="mt-3">
 
-                <Breadcrumb>
+                <Breadcrumb className="breadcrumb-custom mb-0">
 
                     <Breadcrumb.Item
                         href="#"
                         title="This is Cloud"
                     >
                         Cloud
+
+                        <Fragment>
+                            <ChevronRight className="mx-2 text-dark" />
+                        </Fragment>
+
                     </Breadcrumb.Item>
 
                     <Breadcrumb.Item
@@ -26,6 +33,11 @@ function RBBreadcrumbs() {
                         title="This is Files"
                     >
                         Files
+
+                        <Fragment>
+                            <ChevronRight className="mx-2 text-dark" />
+                        </Fragment>
+
                     </Breadcrumb.Item>
 
                     <Breadcrumb.Item
@@ -33,11 +45,17 @@ function RBBreadcrumbs() {
                         title="This is Project"
                     >
                         Project
+
+                        <Fragment>
+                            <ChevronRight className="mx-2 text-dark" />
+                        </Fragment>
+
                     </Breadcrumb.Item>
 
                     <Breadcrumb.Item
                         active
                         title="This is ProjectName"
+                        className="fw-semibold"
                     >
                         ProjectName
                     </Breadcrumb.Item>
@@ -49,36 +67,47 @@ function RBBreadcrumbs() {
 
             {/* Additional Example */}
 
-            <div className="breadcrumb-additional">
+            <div className="mt-5">
 
-                <h4>
+                <h4 className="breadcrumb-heading fw-semibold mb-4">
                     Optional - Additional Example
                 </h4>
 
-                <Breadcrumb>
+                <Breadcrumb className="breadcrumb-custom mb-0">
 
                     <Breadcrumb.Item
                         href="#"
                         title="This is Assignments"
                     >
-                        <i className="bi bi-folder-fill"></i>
-                        <span>Assignments</span>
+                        <i className="bi bi-folder-fill me-2"></i>
+                        Assignments
+
+                        <Fragment>
+                            <ChevronRight className="mx-2 text-dark" />
+                        </Fragment>
+
                     </Breadcrumb.Item>
 
                     <Breadcrumb.Item
                         href="#"
                         title="This is Project"
                     >
-                        <i className="bi bi-folder-fill"></i>
-                        <span>Project</span>
+                        <i className="bi bi-folder-fill me-2"></i>
+                        Project
+
+                        <Fragment>
+                            <ChevronRight className="mx-2 text-dark" />
+                        </Fragment>
+
                     </Breadcrumb.Item>
 
                     <Breadcrumb.Item
                         active
                         title="This is TodoList"
+                        className="fw-semibold"
                     >
-                        <i className="bi bi-code-square"></i>
-                        <span>TodoList</span>
+                        <i className="bi bi-code-square me-2"></i>
+                        TodoList
                     </Breadcrumb.Item>
 
                 </Breadcrumb>

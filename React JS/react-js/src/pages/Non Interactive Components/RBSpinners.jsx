@@ -3,6 +3,7 @@ import Spinner from "react-bootstrap/Spinner";
 import Button from "react-bootstrap/Button";
 
 function RBSpinners() {
+
     const [submitting, setSubmitting] = useState(false);
 
     const handleSubmit = () => {
@@ -14,23 +15,24 @@ function RBSpinners() {
     };
 
     return (
-        <div className="component-page">
+        <div className="container-fluid p-4">
 
-            <h1 className="component-title">
+            <h1 className="fw-bold mb-4">
                 Spinners
             </h1>
 
-            <div className="spinner-section">
+            <div className="mt-4">
 
-                <h2>Default UI</h2>
+                <h2 className="fs-4 fw-semibold mb-3">
+                    Default UI
+                </h2>
 
-                <div className="spinner-buttons">
+                <div className="d-flex gap-2">
 
                     {submitting ? (
                         <Button
                             variant="primary"
                             disabled
-                            className="submitting-button"
                         >
                             <Spinner
                                 animation="border"
@@ -43,7 +45,6 @@ function RBSpinners() {
                         <Button
                             variant="primary"
                             onClick={handleSubmit}
-                            className="submit-button"
                         >
                             Click to Submit
                         </Button>
@@ -52,7 +53,6 @@ function RBSpinners() {
                     <Button
                         variant={submitting ? "danger" : "outline-danger"}
                         onClick={handleCancel}
-                        className="cancel-button"
                     >
                         Cancel
                     </Button>
@@ -60,7 +60,7 @@ function RBSpinners() {
                 </div>
 
                 {submitting && (
-                    <p className="spinner-info">
+                    <p className="mt-3 text-muted">
                         Clicking the Cancel button will stop the submission
                         process.
                     </p>

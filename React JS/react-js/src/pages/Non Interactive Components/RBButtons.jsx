@@ -15,11 +15,9 @@ function RBButtons() {
                 Buttons
             </h1>
 
-            <div className="button-section">
+            <div className="button-section mt-4">
 
-                <h2>Toggle Buttons</h2>
-
-                <ButtonGroup>
+            <ButtonGroup>
 
                     <ToggleButton
                         id="bold"
@@ -68,7 +66,7 @@ function RBButtons() {
                 </ButtonGroup>
 
                 <p
-                    className="toggle-description"
+                    className="toggle-description mt-4"
                     style={{
                         fontWeight: bold ? "700" : "400",
                         fontStyle: italic ? "italic" : "normal",

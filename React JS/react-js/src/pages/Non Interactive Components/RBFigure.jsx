@@ -2,13 +2,13 @@ import Figure from "react-bootstrap/Figure";
 
 function RBFigure() {
     return (
-        <div className="component-page">
+        <div className="container-fluid p-4">
 
-            <h1 className="component-title">
+            <h1 className="fw-bold mb-4">
                 Figures
             </h1>
 
-            <div className="figure-section">
+            <div className="mt-4">
 
                 <Figure>
 

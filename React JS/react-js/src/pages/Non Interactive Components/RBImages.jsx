@@ -2,22 +2,21 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 
 function RBImages() {
-
     const avatars = [
         {
-            name: "Radhika Parmar",
+            name: "Komal Yadav",
             image: "https://i.pravatar.cc/100?img=47"
         },
         {
-            name: "Rajkumar Jadeja",
+            name: "Yash Sharma",
             image: "https://i.pravatar.cc/100?img=12"
         },
         {
-            name: "Aman Sharma",
+            name: "Aman Singh",
             image: "https://i.pravatar.cc/100?img=13"
         },
         {
-            name: "Priya Singh",
+            name: "Priya Mittal",
             image: "https://i.pravatar.cc/100?img=32"
         }
     ];
@@ -29,14 +28,15 @@ function RBImages() {
                 Images
             </h1>
 
-            <div className="images-section">
+            <div className="mt-5">
 
-                <h2>Avatar Group</h2>
+                <h2 className="fs-4 fw-semibold mb-3">
+                    Avatar Group
+                </h2>
 
-                <div className="avatar-group">
+                <div className="d-flex align-items-center">
 
                     {avatars.map((avatar, index) => (
-
                         <OverlayTrigger
                             key={index}
                             placement="top"
@@ -49,10 +49,11 @@ function RBImages() {
                             <img
                                 src={avatar.image}
                                 alt={avatar.name}
-                                className="group-avatar"
+                                className={`group-avatar ${
+                                    index !== 0 ? "avatar-overlap" : ""
+                                }`}
                             />
                         </OverlayTrigger>
-
                     ))}
 
                 </div>

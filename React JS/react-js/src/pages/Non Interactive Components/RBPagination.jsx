@@ -5,40 +5,39 @@ function RBPagination() {
 
     const [currentPage, setCurrentPage] = useState(1);
 
-    const totalPages = 5;
+    const totalPages = 10;
 
     const goToPage = (page) => {
         setCurrentPage(page);
     };
 
     return (
-        <div className="component-page">
+        <div className="container-fluid p-4">
 
-            <h1 className="component-title">
+            <h1 className="fw-bold mb-4">
                 Pagination
             </h1>
 
-            <div className="pagination-section">
+            <div className="mt-4">
 
                 <Pagination>
 
-                    {/* First */}
-
+                   
                     <Pagination.First
                         onClick={() => goToPage(1)}
                         disabled={currentPage === 1}
                     />
 
-                    {/* Previous */}
-
+                    
                     <Pagination.Prev
                         onClick={() => goToPage(currentPage - 1)}
                         disabled={currentPage === 1}
                     />
 
-                    {/* Page Numbers */}
-
-                    {[1, 2, 3, 4, 5].map((page) => (
+                    {Array.from(
+                        { length: totalPages },
+                        (_, index) => index + 1
+                    ).map((page) => (
 
                         <Pagination.Item
                             key={page}
@@ -50,15 +49,13 @@ function RBPagination() {
 
                     ))}
 
-                    {/* Next */}
-
+                    
                     <Pagination.Next
                         onClick={() => goToPage(currentPage + 1)}
                         disabled={currentPage === totalPages}
                     />
 
-                    {/* Last */}
-
+                    
                     <Pagination.Last
                         onClick={() => goToPage(totalPages)}
                         disabled={currentPage === totalPages}
@@ -66,9 +63,8 @@ function RBPagination() {
 
                 </Pagination>
 
-
-                <p className="current-page-text">
-                    Current Page: {currentPage}
+                <p className="mt-3">
+                    Current Page: <strong>{currentPage}</strong>
                 </p>
 
             </div>

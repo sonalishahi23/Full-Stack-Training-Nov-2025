@@ -1,5 +1,7 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function RBCards() {
 
@@ -22,7 +24,7 @@ function RBCards() {
         },
         {
             title: "boAt Rockerz 4550",
-            image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500",
+            image: "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500",
             description:
                 "boAt Rockerz 450, 15 HRS Battery, 40mm Drivers, Padded Ear Cushions, Integrated Controls, Dual Modes, On Ear Bluetooth Headphones.",
             price: "₹1,399",
@@ -31,69 +33,73 @@ function RBCards() {
     ];
 
     return (
-        <div className="component-page">
+        <div className="container-fluid p-4">
 
-            <h1 className="component-title">
+            <h1 className="fw-bold mb-4">
                 Cards
             </h1>
 
-            <div className="cards-container">
+            <Row className="g-4">
 
                 {products.map((product, index) => (
 
-                    <Card className="product-card" key={index}>
+                    <Col md={4} key={index}>
 
-                        <Card.Header className="product-title">
-                            {product.title}
-                        </Card.Header>
+                        <Card className="h-100">
 
-                        <Card.Img
-                            variant="top"
-                            src={product.image}
-                            className="product-image"
-                        />
+                            <Card.Header>
+                                {product.title}
+                            </Card.Header>
 
-                        <Card.Body>
+                            <Card.Img
+                                variant="top"
+                                src={product.image}
+                                alt={product.title}
+                            />
 
-                            <Card.Text className="product-description">
-                                {product.description}
-                            </Card.Text>
+                            <Card.Body>
 
-                            <div className="product-price">
-                                <span className="current-price">
-                                    {product.price}
-                                </span>
+                                <Card.Text>
+                                    {product.description}
+                                </Card.Text>
 
-                                <span className="old-price">
-                                    {product.oldPrice}
-                                </span>
-                            </div>
+                                <div className="mb-3">
+                                    <strong className="fs-5">
+                                        {product.price}
+                                    </strong>
 
-                        </Card.Body>
+                                    <del className="ms-2 text-muted">
+                                        {product.oldPrice}
+                                    </del>
+                                </div>
 
-                        <Card.Footer className="product-footer">
+                            </Card.Body>
 
-                            <Button
-                                variant="outline-primary"
-                                size="sm"
-                            >
-                                Add To Cart
-                            </Button>
+                            <Card.Footer className="d-flex gap-2">
 
-                            <Button
-                                variant="primary"
-                                size="sm"
-                            >
-                                Buy Now
-                            </Button>
+                                <Button
+                                    variant="outline-primary"
+                                    size="sm"
+                                >
+                                    Add To Cart
+                                </Button>
 
-                        </Card.Footer>
+                                <Button
+                                    variant="primary"
+                                    size="sm"
+                                >
+                                    Buy Now
+                                </Button>
 
-                    </Card>
+                            </Card.Footer>
+
+                        </Card>
+
+                    </Col>
 
                 ))}
 
-            </div>
+            </Row>
 
         </div>
     );

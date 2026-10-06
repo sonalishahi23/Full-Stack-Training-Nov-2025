@@ -3,7 +3,7 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
 
-function RBPrgressBars() {
+function RBProgressBars() {
 
     const [progress, setProgress] = useState(5);
 
@@ -16,115 +16,97 @@ function RBPrgressBars() {
     };
 
     return (
-        <div className="component-page">
+        <div className="container-fluid p-4">
 
-            <h1 className="component-title">
+            <h1 className="fw-bold mb-4">
                 Progress Bars
             </h1>
 
-            {/* Adjustment Buttons */}
+            {/* Buttons */}
 
-            <div className="progress-controls">
+            <div className="d-flex gap-2 mt-4">
 
                 <Button
                     variant="primary"
+                    size="sm"
                     onClick={increaseProgress}
+                    disabled={progress === 100}
                 >
                     Progress + 5%
                 </Button>
 
                 <Button
                     variant="primary"
+                    size="sm"
                     onClick={decreaseProgress}
+                    disabled={progress === 0}
                 >
                     Progress - 5%
                 </Button>
-
             </div>
 
 
-            {/* Top Progress Bars */}
+            <div className="mt-4">
 
-            <div className="top-progress">
-
-                <p>
+                <p className="mb-1">
                     Completed {progress}%
                 </p>
 
                 <ProgressBar
                     now={progress}
+                    label={`${progress}%`}
                     variant="success"
+                    className="mb-2"
                 />
 
                 <ProgressBar
                     now={progress}
                     variant="danger"
-                    className="second-progress"
                 />
 
             </div>
 
+            <div className="mt-4 p-4 border rounded">
 
-            {/* Project Dashboard Card */}
+                <h2 className="fs-3 fw-bold">
+                    Bootstrap Dashboard
+                    <br />
+                    Application
+                </h2>
 
-            <div className="project-card">
+                <span className="text-muted">
+                    Web Development
+                </span>
 
-                <div className="project-header">
-
-                    <div>
-                        <h2>
-                            Bootstrap Dashboard Application
-                        </h2>
-
-                        <span>
-                            Web Development
-                        </span>
-                    </div>
-
-                </div>
-
-
-                <p className="project-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer posuere erat a ante. Lorem ipsum dolor sit amet,
+                <p className="mt-3 mb-3">
+                    Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit.
                 </p>
 
+                <Badge bg="primary">
+                    In Progress
+                </Badge>
 
-                <div className="project-status">
+                <ProgressBar
+                    now={progress}
+                    label={`${progress}%`}
+                    className="mt-2"
+                />
 
-                    <Badge bg="info">
-                        In Progress
-                    </Badge>
-
-                    <ProgressBar
-                        now={progress}
-                        label={`${progress}%`}
-                    />
-
-                </div>
-
-
-                <div className="project-footer">
+                <div className="d-flex justify-content-between mt-3">
 
                     <div>
-                        <span className="metric-label">
-                            Due Date
+                        <span className="d-block text-muted">
+                            Due Date:
                         </span>
-
-                        <strong>
-                            1 Jan, 2022
-                        </strong>
+                        <strong>1 Jan, 2022</strong>
                     </div>
 
                     <div>
-                        <span className="metric-label">
-                            Budget
+                        <span className="d-block text-muted">
+                            Budget:
                         </span>
-
-                        <strong>
-                            $123,000
-                        </strong>
+                        <strong>$123,000</strong>
                     </div>
 
                 </div>
@@ -135,4 +117,4 @@ function RBPrgressBars() {
     );
 }
 
-export default RBPrgressBars;
+export default RBProgressBars;
