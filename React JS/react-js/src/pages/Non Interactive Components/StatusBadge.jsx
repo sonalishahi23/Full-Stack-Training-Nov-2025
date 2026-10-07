@@ -35,12 +35,12 @@ function StatusBadge({ status }) {
     }
 
     if (status === "OVERDUE") {
-    return (
-        <Badge className="bg-info bg-opacity-10 text-info" pill>
-            OVERDUE
-        </Badge>
-    );
-}
+        return (
+            <Badge className="bg-info bg-opacity-10 text-info" pill>
+                OVERDUE
+            </Badge>
+        );
+    }
 
     return null;
 }

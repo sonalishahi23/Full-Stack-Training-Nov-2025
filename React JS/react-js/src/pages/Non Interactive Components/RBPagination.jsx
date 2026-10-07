@@ -5,7 +5,7 @@ function RBPagination() {
 
     const [currentPage, setCurrentPage] = useState(1);
 
-    const totalPages = 10;
+    const totalPages = 5;
 
     const goToPage = (page) => {
         setCurrentPage(page);
