@@ -94,9 +94,7 @@ function RBTables() {
                 Tables
             </h1>
 
-            {/* =========================
-                RESPONSIVE TABLE
-            ========================= */}
+            {/*RESPONSIVE TABLE*/}
 
             <div className="mt-4">
 
@@ -161,9 +159,7 @@ function RBTables() {
             </div>
 
 
-            {/* =========================
-                NON-RESPONSIVE TABLE
-            ========================= */}
+            {/*NON-RESPONSIVE TABLE*/}
 
             <div className="mt-5">
 
