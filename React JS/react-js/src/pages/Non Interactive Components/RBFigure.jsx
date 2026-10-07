@@ -20,7 +20,7 @@ function RBFigure() {
                     />
 
                     <Figure.Caption>
-                        A beautiful example of a React development image.
+                        React is a free and open-source front-end JavaScript library for building component-based user interfaces.
                     </Figure.Caption>
 
                 </Figure>
