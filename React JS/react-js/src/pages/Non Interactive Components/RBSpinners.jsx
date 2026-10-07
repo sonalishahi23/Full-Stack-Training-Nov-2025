@@ -27,35 +27,38 @@ function RBSpinners() {
                     Default UI
                 </h2>
 
-                <div className="d-flex gap-2">
+                
 
-                    {submitting ? (
-                        <Button
-                            variant="primary"
-                            disabled
-                        >
-                            <Spinner
-                                animation="border"
-                                size="sm"
-                                className="me-2"
-                            />
-                            Submitting
-                        </Button>
-                    ) : (
+                    <div className="d-flex gap-2">
+
                         <Button
                             variant="primary"
                             onClick={handleSubmit}
+                            disabled={submitting}
                         >
-                            Click to Submit
+                            {submitting ? (
+                                <>
+                                    <Spinner
+                                        animation="border"
+                                        size="sm"
+                                        className="me-2"
+                                    />
+                                    Submitting
+                                </>
+                            ) : (
+                                "Click to Submit"
+                            )}
                         </Button>
-                    )}
 
-                    <Button
-                        variant={submitting ? "danger" : "outline-danger"}
-                        onClick={handleCancel}
-                    >
-                        Cancel
-                    </Button>
+                        <Button
+                            variant="danger"
+                            onClick={handleCancel}
+                            disabled={!submitting}
+                        >
+                            Cancel
+                        </Button>
+
+                    
 
                 </div>
 
