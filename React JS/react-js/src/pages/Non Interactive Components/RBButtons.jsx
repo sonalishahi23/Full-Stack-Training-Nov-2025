@@ -9,9 +9,9 @@ function RBButtons() {
     const [strike, setStrike] = useState(false);
 
     return (
-        <div className="component-page">
+        <div >
 
-            <h1 className="component-title">
+            <h1 >
                 Buttons
             </h1>
 
