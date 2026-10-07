@@ -22,9 +22,9 @@ function RBImages() {
     ];
 
     return (
-        <div className="component-page">
+        <div >
 
-            <h1 className="component-title">
+            <h1 >
                 Images
             </h1>
 

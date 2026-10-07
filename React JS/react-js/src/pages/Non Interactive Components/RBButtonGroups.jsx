@@ -6,9 +6,9 @@ function RBButtonGroups() {
     const [alignment, setAlignment] = useState("left");
 
     return (
-        <div className="component-page">
+        <div >
 
-            <h1 className="component-title">
+            <h1 >
                 Button Group
             </h1>
 

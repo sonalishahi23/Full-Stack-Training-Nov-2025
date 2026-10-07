@@ -4,9 +4,9 @@ import { ChevronRight } from "react-bootstrap-icons";
 
 function RBBreadcrumbs() {
     return (
-        <div className="component-page">
+        <div >
 
-            <h1 className="component-title">
+            <h1 >
                 Breadcrumbs
             </h1>
 
