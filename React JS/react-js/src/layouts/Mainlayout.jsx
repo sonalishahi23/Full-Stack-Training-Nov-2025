@@ -164,7 +164,71 @@ function MainLayout() {
                                 Close Button
                             </Link>
 
-                            
+
+
+                        </div>
+                    )}
+
+                </div>
+
+
+                {/* ================= INTERACTIVE COMPONENTS ================= */}
+
+                <div className="sidebar-section">
+
+                    <div
+                        className="section-header"
+                        onClick={() => handleSection("interactive")}
+                    >
+                        <span>Interactive Comp.</span>
+
+                        <i
+                            className={
+                                openSection === "interactive"
+                                    ? "bi bi-chevron-up"
+                                    : "bi bi-chevron-down"
+                            }
+                        ></i>
+                    </div>
+
+                    {openSection === "interactive" && (
+                        <div className="section-items">
+
+                            <Link to="/accordions">
+                                <i className="bi bi-menu-button-wide"></i>
+                                Accordions
+                            </Link>
+
+                            <Link to="/carousels">
+                                <i className="bi bi-images"></i>
+                                Carousels
+                            </Link>
+
+                            <Link to="/dropdown">
+                                <i className="bi bi-menu-button"></i>
+                                Dropdown
+                            </Link>
+
+                            <Link to="/modals">
+                                <i className="bi bi-window me-2"></i>
+                                Modals
+                            </Link>
+
+                            <Link to="/navbar-offcanvas">
+                                <i className="bi bi-layout-sidebar-inset me-2"></i>
+                                Navbar & Offcanvas
+                            </Link>
+
+                            <Link to="/navs-tabs">
+                                <i className="bi bi-layout-text-window-reverse me-2"></i>
+                                Navs and Tabs
+                            </Link>
+
+                            <Link to="/overlays">
+                                <i className="bi bi-chat-square-text me-2"></i>
+                                Overlays & Tooltips
+                            </Link>
+
 
                         </div>
                     )}

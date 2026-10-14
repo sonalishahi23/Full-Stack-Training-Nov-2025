@@ -21,6 +21,14 @@ import RBPrgressBars from "./pages/Non Interactive Components/RBPrgressBars";
 import RBSpinners from "./pages/Non Interactive Components/RBSpinners";
 import RBTables from "./pages/Non Interactive Components/RBTables";
 
+import RBAccordions from "./pages/Interactive Components/RBAccordions";
+import RBCarousels from "./pages/Interactive Components/RBCarousels";
+import RBDropdowns from "./pages/Interactive Components/RBDropdowns";
+import RBModal from "./pages/Interactive Components/RBModal";
+import RBNavbarOffcanvas from "./pages/Interactive Components/RBNavbarOffcanvas";
+import RBNavsTabs from "./pages/Interactive Components/RBNavsTabs";
+import RBOverlays from "./pages/Interactive Components/RBOverlays";
+
 
 const router = createBrowserRouter([
     {
@@ -94,6 +102,34 @@ const router = createBrowserRouter([
             {
                 path: "tables",
                 element: <RBTables />
+            },
+            {
+                path: "accordions",
+                element: <RBAccordions />
+            },
+            {
+                path: "carousels",
+                element: <RBCarousels />
+            },
+            {
+                path: "dropdown",
+                element: <RBDropdowns />
+            },
+            {
+                path: "modals",
+                element: <RBModal />
+            },
+            {
+                path: "navbar-offcanvas",
+                element: <RBNavbarOffcanvas />,
+            },
+            {
+                path: "navs-tabs",
+                element: <RBNavsTabs />,
+            },
+            {
+                path: "overlays",
+                element: <RBOverlays />,
             }
         ]
     }
