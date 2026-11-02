@@ -29,6 +29,11 @@ import RBNavbarOffcanvas from "./pages/Interactive Components/RBNavbarOffcanvas"
 import RBNavsTabs from "./pages/Interactive Components/RBNavsTabs";
 import RBOverlays from "./pages/Interactive Components/RBOverlays";
 
+import RBForms from "./pages/Forms/BasicFormControls";
+import RBFormikValidation from "./pages/Forms/FormikValidation";
+import RHFBasicValidation from "./pages/Forms/RHFBasicValidation";
+import RHFYupSchema from "./pages/Forms/RHFYupSchema";
+
 
 const router = createBrowserRouter([
     {
@@ -130,6 +135,22 @@ const router = createBrowserRouter([
             {
                 path: "overlays",
                 element: <RBOverlays />,
+            },
+            {
+                path: "Form",
+                element: <RBForms />,
+            },
+            {
+                path: "formik-validation",
+                element: <RBFormikValidation />,
+            },
+            {
+                path: "rhfvalidation",
+                element: <RHFBasicValidation />,
+            },
+            {
+                path: "rhf-yup-schema",
+                element: <RHFYupSchema />
             }
         ]
     }

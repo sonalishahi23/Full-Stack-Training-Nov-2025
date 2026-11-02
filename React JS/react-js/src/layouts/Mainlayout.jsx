@@ -5,7 +5,7 @@ import { Link, Outlet } from "react-router";
 
 function MainLayout() {
 
-    const [openSection, setOpenSection] = useState("null");
+    const [openSection, setOpenSection] = useState(null);
 
     const handleSection = (section) => {
         setOpenSection(
@@ -233,6 +233,47 @@ function MainLayout() {
                         </div>
                     )}
 
+                </div>
+
+                {/* ================= FORM ================= */}
+
+                <div className="sidebar-section">
+                    <div
+                        className="section-header"
+                        onClick={() => handleSection("form")}
+                    >
+                        <span>Form</span>
+
+                        <i
+                            className={
+                                openSection === "form"
+                                    ? "bi bi-chevron-up"
+                                    : "bi bi-chevron-down"
+                            }
+                        ></i>
+                    </div>
+
+                    {openSection === "form" && (
+                        <div className="section-items">
+                            <Link to="/form">
+                                <i className="bi bi-ui-checks"></i>
+                                Form Basic Control
+                            </Link>
+
+                            <Link to="/formik-validation" className="nav-link">
+                                <i className="bi bi-ui-checks-grid me-2"></i>
+                                Formik Form
+                            </Link>
+                            <Link to="/rhfvalidation" className="nav-link">
+                                <i className="bi bi-ui-checks-grid me-2"></i>
+                                RHF Basic Validation
+                            </Link>
+                            <Link to="/rhf-yup-schema" className="nav-link">
+                                <i className="bi bi-ui-checks-grid me-2"></i>
+                                RHF Yup Schema 
+                            </Link>
+                        </div>
+                    )}
                 </div>
             </div>
 
