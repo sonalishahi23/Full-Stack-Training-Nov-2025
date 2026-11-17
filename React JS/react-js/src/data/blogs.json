@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Getting Started with React",
+        "category": "Web Development",
+        "author": "John Smith",
+        "date": "2026-10-15",
+        "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800",
+        "excerpt": "Learn the basics of React and understand how to build interactive user interfaces.",
+        "content": "React is a popular JavaScript library used for building user interfaces. It allows developers to create reusable components and manage application data efficiently. React makes it easier to build modern and interactive web applications."
+    },
+    {
+        "id": 2,
+        "title": "Understanding JavaScript ES6",
+        "category": "JavaScript",
+        "author": "Emma Wilson",
+        "date": "2026-10-18",
+        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800",
+        "excerpt": "Explore modern JavaScript features that make coding easier and cleaner.",
+        "content": "JavaScript ES6 introduced many useful features such as let, const, arrow functions, template literals, destructuring and promises. These features help developers write cleaner and more maintainable code."
+    },
+    {
+        "id": 3,
+        "title": "Introduction to Bootstrap",
+        "category": "CSS",
+        "author": "David Brown",
+        "date": "2026-10-20",
+        "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800",
+        "excerpt": "Discover how Bootstrap helps you create responsive websites quickly.",
+        "content": "Bootstrap is a popular CSS framework used to create responsive and mobile-first websites. It provides ready-made components, utility classes and a grid system that help developers build layouts quickly."
+    },
+    {
+        "id": 4,
+        "title": "Why Learn Full Stack Development?",
+        "category": "Programming",
+        "author": "Sarah Johnson",
+        "date": "2026-10-22",
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
+        "excerpt": "Understand frontend and backend development and how they work together.",
+        "content": "Full Stack Development involves working on both frontend and backend parts of a web application. Frontend focuses on what users see, while backend manages server-side logic, databases and APIs."
+    },
+    {
+        "id": 5,
+        "title": "Getting Started with HTML and CSS",
+        "category": "Web Design",
+        "author": "Michael Lee",
+        "date": "2026-10-25",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
+        "excerpt": "Learn how HTML structures web pages and CSS makes them visually appealing.",
+        "content": "HTML is used to create the structure of web pages, while CSS controls their appearance. Together, they form the foundation of frontend web development."
+    },
+    {
+        "id": 6,
+        "title": "Introduction to APIs",
+        "category": "Backend Development",
+        "author": "Olivia Martin",
+        "date": "2026-10-28",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
+        "excerpt": "Learn what APIs are and how applications communicate with each other.",
+        "content": "An API allows two software applications to communicate with each other. APIs are commonly used to exchange data between frontend applications and backend servers."
+    },
+    {
+        "id": 7,
+        "title": "Introduction to Python Programming",
+        "category": "Programming",
+        "author": "Sophia Miller",
+        "date": "2026-10-30",
+        "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800",
+        "excerpt": "Learn Python basics and understand how to write simple and effective programs.",
+        "content": "Python is a high-level programming language known for its simple syntax and readability. It is widely used in web development, data science, artificial intelligence and automation. Beginners can easily learn Python because its syntax is similar to everyday English."
+    },
+    {
+        "id": 8,
+        "title": "Understanding Database Management Systems",
+        "category": "Database",
+        "author": "James Wilson",
+        "date": "2026-11-02",
+        "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800",
+        "excerpt": "Explore how databases store, organize and manage information efficiently.",
+        "content": "A Database Management System (DBMS) is software used to store, manage and retrieve data. It provides an organized way to handle large amounts of information. MySQL, Oracle and PostgreSQL are popular examples of database management systems."
+    },
+    {
+        "id": 9,
+        "title": "Getting Started with Git and GitHub",
+        "category": "Development Tools",
+        "author": "Olivia Brown",
+        "date": "2026-11-05",
+        "image": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800",
+        "excerpt": "Discover how Git and GitHub help developers manage and collaborate on projects.",
+        "content": "Git is a version control system that helps developers track changes in their code. GitHub is a platform where developers can store and share Git repositories. These tools make teamwork easier and help maintain project history."
+    }
+]

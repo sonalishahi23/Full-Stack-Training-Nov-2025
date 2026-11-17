@@ -270,11 +270,44 @@ function MainLayout() {
                             </Link>
                             <Link to="/rhf-yup-schema" className="nav-link">
                                 <i className="bi bi-ui-checks-grid me-2"></i>
-                                RHF Yup Schema 
+                                RHF Yup Schema
                             </Link>
                         </div>
                     )}
                 </div>
+
+                {/* ================= ADVANCE ROUTING ================= */}
+
+                <div className="sidebar-section">
+
+                    <div
+                        className="section-header"
+                        onClick={() => handleSection("advanceRouting")}
+                    >
+                        <span>Advance Routing</span>
+
+                        <i
+                            className={
+                                openSection === "advanceRouting"
+                                    ? "bi bi-chevron-up"
+                                    : "bi bi-chevron-down"
+                            }
+                        ></i>
+                    </div>
+
+                    {openSection === "advanceRouting" && (
+                        <div className="section-items">
+
+                            <Link to="/blog">
+                                <i className="bi bi-arrow-right"></i>
+                                Blog
+                            </Link>
+
+                        </div>
+                    )}
+
+                </div>
+                
             </div>
 
 

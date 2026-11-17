@@ -4,7 +4,7 @@ import Home from "./pages/home";
 import StaticPage from "./pages/Assignments/Static";
 import CounterPage from "./pages/Assignments/Counter";
 import DynamicPage from "./pages/Assignments/Dynamic";
-import TodoList from "./pages/Assignments/TodoList";
+import AssignmentTodoList from "./pages/Assignments/AssignmentTodoList";
 
 import MainLayout from "./layouts/Mainlayout";
 
@@ -34,6 +34,11 @@ import RBFormikValidation from "./pages/Forms/FormikValidation";
 import RHFBasicValidation from "./pages/Forms/RHFBasicValidation";
 import RHFYupSchema from "./pages/Forms/RHFYupSchema";
 
+import BlogListing from "./pages/AdvanceRouting/BlogListing";
+import BlogDetail from "./pages/AdvanceRouting/BlogDetail";
+import BlogSearch from "./pages/AdvanceRouting/BlogSearch";
+import NotFound from "./pages/AdvanceRouting/NotFound";
+
 
 const router = createBrowserRouter([
     {
@@ -58,7 +63,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "todo",
-                element: <TodoList />
+                element: <AssignmentTodoList />
             },
             {
                 path: "badges",
@@ -151,7 +156,37 @@ const router = createBrowserRouter([
             {
                 path: "rhf-yup-schema",
                 element: <RHFYupSchema />
+            },
+            {
+                path: "blog",
+                children: [
+                    {
+                        index: true,
+                        element: <BlogListing />
+                    },
+                    {
+                        path: "search",
+                        element: <BlogSearch />
+                    },
+                    {
+                        path: ":id",
+                        element: <BlogDetail />
+                    },
+                    {
+                        path: "/blog/search",
+                        element: <BlogSearch />
+                    },
+                    {
+                        path: "/blog/search/:keyword",
+                        element: <BlogSearch />
+                    }
+                ]
+            },
+            {
+                path: "*",
+                element: <NotFound />
             }
+
         ]
     }
 ]);
